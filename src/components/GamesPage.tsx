@@ -1,11 +1,12 @@
 import { useState } from 'react';
+import ChessGameEmbed from './ChessGameEmbed';
 
 interface Game {
   id: number;
   opponent: string;
   result: 'win' | 'loss' | 'draw';
   date: string;
-  moves?: string;
+  chessComId?: string; // Chess.com embed ID
 }
 
 interface TeamMember {
@@ -14,13 +15,24 @@ interface TeamMember {
 }
 
 const GamesPage: React.FC = () => {
-  // Sample data - you would replace this with your actual data
+  // Team member data with Chess.com embed IDs
   const [teamMembers] = useState<TeamMember[]>([
     {
       name: "Kunal Shrivastav",
       games: [
-        { id: 1, opponent: "Stanford University", result: "win", date: "2025-02-12" },
-        { id: 2, opponent: "UCLA", result: "draw", date: "2025-03-05" }
+        { 
+          id: 1, 
+          opponent: "Chess_nut_Tree", 
+          result: "win", 
+          date: "2025-04-05",
+          chessComId: "13139518" // The actual Chess.com game ID from your embed
+        },
+        { 
+          id: 2, 
+          opponent: "UCLA", 
+          result: "draw", 
+          date: "2025-03-05" 
+        }
       ]
     },
     {
@@ -47,13 +59,14 @@ const GamesPage: React.FC = () => {
   ]);
 
   const [selectedMember, setSelectedMember] = useState<string>("");
+  const [selectedGame, setSelectedGame] = useState<Game | null>(null);
   
   // Get the selected member's games
   const selectedGames = teamMembers.find(member => member.name === selectedMember)?.games || [];
 
   return (
     <div className="min-h-screen bg-blue-50 flex flex-col items-center p-4">
-      <div className="max-w-2xl w-full bg-white rounded-lg shadow-lg overflow-hidden">
+      <div className="max-w-4xl w-full bg-white rounded-lg shadow-lg overflow-hidden">
         <header className="bg-blue-800 p-6 text-white text-center">
           <h1 className="text-3xl font-bold mb-2">UCR Collegiate Chess League</h1>
           <h2 className="text-xl">Games</h2>
@@ -70,7 +83,10 @@ const GamesPage: React.FC = () => {
                 id="memberSelect"
                 className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                 value={selectedMember}
-                onChange={(e) => setSelectedMember(e.target.value)}
+                onChange={(e) => {
+                  setSelectedMember(e.target.value);
+                  setSelectedGame(null);
+                }}
               >
                 <option value="">-- Select a team member --</option>
                 {teamMembers.map((member) => (
@@ -89,13 +105,14 @@ const GamesPage: React.FC = () => {
                 </h4>
                 
                 {selectedGames.length > 0 ? (
-                  <div className="overflow-x-auto">
+                  <div className="overflow-x-auto mb-6">
                     <table className="min-w-full bg-white">
                       <thead>
                         <tr className="bg-gray-100">
                           <th className="py-2 px-4 border-b text-left">Opponent</th>
                           <th className="py-2 px-4 border-b text-left">Result</th>
                           <th className="py-2 px-4 border-b text-left">Date</th>
+                          <th className="py-2 px-4 border-b text-left">Actions</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -113,6 +130,18 @@ const GamesPage: React.FC = () => {
                             <td className="py-2 px-4 border-b">
                               {new Date(game.date).toLocaleDateString()}
                             </td>
+                            <td className="py-2 px-4 border-b">
+                              {game.chessComId ? (
+                                <button 
+                                  className="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded text-sm"
+                                  onClick={() => setSelectedGame(game)}
+                                >
+                                  View Game
+                                </button>
+                              ) : (
+                                <span className="text-gray-400 text-sm">No game available</span>
+                              )}
+                            </td>
                           </tr>
                         ))}
                       </tbody>
@@ -120,6 +149,16 @@ const GamesPage: React.FC = () => {
                   </div>
                 ) : (
                   <p className="text-gray-600">No games recorded for this player.</p>
+                )}
+                
+                {/* Chess Board Display with Chess.com Embed */}
+                {selectedGame && selectedGame.chessComId && (
+                  <div className="mt-8 border-t pt-6">
+                    <ChessGameEmbed 
+                      gameId={selectedGame.chessComId}
+                      title={`Game: ${selectedMember} vs ${selectedGame.opponent}`}
+                    />
+                  </div>
                 )}
               </div>
             )}
