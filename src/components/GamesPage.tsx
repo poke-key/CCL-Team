@@ -255,6 +255,76 @@ const GamesPage: React.FC = () => {
       notes: "Player did not participate",
       collegeTeam: "uwaterloo-b",
       playerName: "Falak Tulsi"
+    },
+    
+    // Maanas vs UWATERLOO TEAM B
+    {
+      id: 19,
+      opponent: "Chyessirree",
+      result: "win",
+      date: "2025-04-05",
+      chessComId: "13140094",
+      round: "Round 1",
+      timeControl: "5+2",
+      playedAs: "black",
+      notes: "Player username: SuperMaanas",
+      collegeTeam: "uwaterloo-b",
+      playerName: "Maanas Kollegal"
+    },
+    {
+      id: 20,
+      opponent: "N/A",
+      result: "draw",
+      date: "2025-04-05",
+      round: "Round 2",
+      timeControl: "N/A",
+      notes: "Game not recorded",
+      collegeTeam: "uwaterloo-b",
+      playerName: "Maanas Kollegal"
+    },
+    {
+      id: 21,
+      opponent: "N/A",
+      result: "draw",
+      date: "2025-04-05",
+      round: "Round 3",
+      timeControl: "N/A",
+      notes: "Game not recorded",
+      collegeTeam: "uwaterloo-b",
+      playerName: "Maanas Kollegal"
+    },
+    {
+      id: 22,
+      opponent: "N/A",
+      result: "draw",
+      date: "2025-04-05",
+      round: "Round 4",
+      timeControl: "N/A",
+      notes: "Game not recorded",
+      collegeTeam: "uwaterloo-b",
+      playerName: "Maanas Kollegal"
+    },
+    {
+      id: 23,
+      opponent: "N/A",
+      result: "draw",
+      date: "2025-04-05",
+      round: "Round 5",
+      timeControl: "N/A",
+      notes: "Game not recorded",
+      collegeTeam: "uwaterloo-b",
+      playerName: "Maanas Kollegal"
+    },
+    {
+      id: 24,
+      opponent: "N/A",
+      result: "draw",
+      date: "2025-04-05",
+      round: "Round 6",
+      timeControl: "N/A",
+      notes: "Game not recorded",
+      collegeTeam: "uwaterloo-b",
+      playerName: "Maanas Kollegal"
     }
   ];
 
@@ -268,7 +338,7 @@ const GamesPage: React.FC = () => {
     : [];
   
   // Get unique player names for the selected college team  
-  const playerNames = [...new Set(collegeTeamGames.map(game => game.playerName))];
+  const playerNames = [...new Set(collegeTeamGames.map(game => game.playerName))].sort();
   
   // Get games for the selected player
   const playerGames = selectedPlayer 
@@ -359,6 +429,7 @@ const GamesPage: React.FC = () => {
                           <th className="py-2 px-4 border-b text-left">Time Control</th>
                           <th className="py-2 px-4 border-b text-left">Played As</th>
                           <th className="py-2 px-4 border-b text-left">Result</th>
+                          <th className="py-2 px-4 border-b text-left">Notes</th>
                           <th className="py-2 px-4 border-b text-left">Actions</th>
                         </tr>
                       </thead>
@@ -379,6 +450,7 @@ const GamesPage: React.FC = () => {
                                 {game.result.charAt(0).toUpperCase() + game.result.slice(1)}
                               </span>
                             </td>
+                            <td className="py-2 px-4 border-b">{game.notes || "-"}</td>
                             <td className="py-2 px-4 border-b">
                               {game.chessComId ? (
                                 <button 
@@ -398,6 +470,33 @@ const GamesPage: React.FC = () => {
                   </div>
                 ) : (
                   <p className="text-gray-600">No games recorded for this selection.</p>
+                )}
+                
+                {/* Match summary statistics */}
+                {collegeTeamGames.length > 0 && (
+                  <div className="mt-6 mb-8 p-4 bg-gray-50 rounded-lg">
+                    <h5 className="font-medium text-lg mb-2">Match Summary</h5>
+                    <div className="grid grid-cols-3 gap-4 text-center">
+                      <div className="p-3 bg-green-100 rounded">
+                        <p className="text-lg font-bold text-green-800">
+                          {collegeTeamGames.filter(game => game.result === 'win').length}
+                        </p>
+                        <p className="text-sm text-green-700">Wins</p>
+                      </div>
+                      <div className="p-3 bg-red-100 rounded">
+                        <p className="text-lg font-bold text-red-800">
+                          {collegeTeamGames.filter(game => game.result === 'loss').length}
+                        </p>
+                        <p className="text-sm text-red-700">Losses</p>
+                      </div>
+                      <div className="p-3 bg-yellow-100 rounded">
+                        <p className="text-lg font-bold text-yellow-800">
+                          {collegeTeamGames.filter(game => game.result === 'draw').length}
+                        </p>
+                        <p className="text-sm text-yellow-700">Draws</p>
+                      </div>
+                    </div>
+                  </div>
                 )}
                 
                 {/* Chess Board Display with Chess.com Embed */}
