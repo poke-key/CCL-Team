@@ -42,10 +42,10 @@ const ChessGameEmbed: React.FC<ChessGameEmbedProps> = ({
           allowTransparency={true}
           style={{ 
             width: '100%', 
-            maxWidth: '560px', // Set a maximum width
+            maxWidth: '560px', //set max width
             border: 'none',
-            minHeight: '450px', // Set a minimum height
-            margin: '0 auto', // Center the iframe
+            minHeight: '450px', //set min height
+            margin: '0 auto', //center the iframe
             display: 'block'
           }}
           src={`https://www.chess.com/emboard?id=${gameId}`}

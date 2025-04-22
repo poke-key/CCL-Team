@@ -6,19 +6,21 @@ interface Game {
   opponent: string;
   result: 'win' | 'loss' | 'draw';
   date: string;
-  chessComId?: string; // Chess.com embed ID
+  chessComId?: string; //chess.com embed ID
   round?: string;
   timeControl?: string;
   playedAs?: 'white' | 'black';
 }
 
+/*struct of the player*/
 interface TeamMember {
   name: string;
   games: Game[];
 }
 
+/*structure for  all 4 players is used in here*/
 const GamesPage: React.FC = () => {
-  // Team member data with Chess.com embed IDs
+  //team member data with Chess.com embed IDs
   const [teamMembers] = useState<TeamMember[]>([
     {
       name: "Kunal Shrivastav",
@@ -169,10 +171,10 @@ const GamesPage: React.FC = () => {
   const [selectedMember, setSelectedMember] = useState<string>("");
   const [selectedGame, setSelectedGame] = useState<Game | null>(null);
   
-  // Get the selected member's games
+  //getter function for the selected member's games
   const selectedGames = teamMembers.find(member => member.name === selectedMember)?.games || [];
 
-  // Function to format player names based on who played as white/black
+  //function for format player names based on who played as white/black
   const formatMatchup = (playerName: string, opponentName: string, playedAs?: 'white' | 'black') => {
     if (playedAs === 'white') {
       return `${playerName} vs ${opponentName}`;
