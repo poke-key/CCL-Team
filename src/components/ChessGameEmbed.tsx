@@ -17,7 +17,9 @@ const ChessGameEmbed: React.FC<ChessGameEmbedProps> = ({
       if (e.data && e.data.id === gameId && containerRef.current) {
         const iframe = containerRef.current.querySelector(`iframe#${gameId}`) as HTMLIFrameElement | null;
         if (iframe) {
-          iframe.style.height = `${e.data.frameHeight + 37}px`;
+          // Adjust height to be more compact to ensure the entire board is visible
+          // The original +37 was making it too tall
+          iframe.style.height = `${e.data.frameHeight}px`;
         }
       }
     };
@@ -38,7 +40,14 @@ const ChessGameEmbed: React.FC<ChessGameEmbedProps> = ({
           title={title}
           frameBorder="0"
           allowTransparency={true}
-          style={{ width: '100%', border: 'none' }}
+          style={{ 
+            width: '100%', 
+            maxWidth: '560px', // Set a maximum width
+            border: 'none',
+            minHeight: '450px', // Set a minimum height
+            margin: '0 auto', // Center the iframe
+            display: 'block'
+          }}
           src={`https://www.chess.com/emboard?id=${gameId}`}
         ></iframe>
       </div>
