@@ -6,21 +6,20 @@ interface Game {
   opponent: string;
   result: 'win' | 'loss' | 'draw';
   date: string;
-  chessComId?: string; //chess.com embed ID
+  chessComId?: string; // Chess.com embed ID
   round?: string;
   timeControl?: string;
   playedAs?: 'white' | 'black';
+  notes?: string;
 }
 
-/*struct of the player*/
 interface TeamMember {
   name: string;
   games: Game[];
 }
 
-/*structure for  all 4 players is used in here*/
 const GamesPage: React.FC = () => {
-  //team member data with Chess.com embed IDs
+  // Team member data with Chess.com embed IDs
   const [teamMembers] = useState<TeamMember[]>([
     {
       name: "Kunal Shrivastav",
@@ -153,17 +152,73 @@ const GamesPage: React.FC = () => {
       ]
     },
     {
+      name: "Falak Tulsi",
+      games: [
+        {
+          id: 1,
+          opponent: "ComingForCM",
+          result: "loss",
+          date: "2025-04-05",
+          chessComId: "13139882",
+          round: "Round 1",
+          timeControl: "5+2",
+          playedAs: "white",
+          notes: "Player username: skizzers13"
+        },
+        {
+          id: 2,
+          opponent: "lasdw",
+          result: "loss",
+          date: "2025-04-05",
+          chessComId: "13139884",
+          round: "Round 2",
+          timeControl: "5+2",
+          playedAs: "black",
+          notes: "Player username: skizzers13"
+        },
+        {
+          id: 3,
+          opponent: "N/A",
+          result: "loss",
+          date: "2025-04-05",
+          round: "Round 3",
+          timeControl: "N/A",
+          notes: "Player did not participate"
+        },
+        {
+          id: 4,
+          opponent: "N/A",
+          result: "loss",
+          date: "2025-04-05",
+          round: "Round 4",
+          timeControl: "N/A",
+          notes: "Player did not participate"
+        },
+        {
+          id: 5,
+          opponent: "N/A",
+          result: "loss",
+          date: "2025-04-05",
+          round: "Round 5",
+          timeControl: "N/A",
+          notes: "Player did not participate"
+        },
+        {
+          id: 6,
+          opponent: "N/A",
+          result: "loss",
+          date: "2025-04-05",
+          round: "Round 6",
+          timeControl: "N/A",
+          notes: "Player did not participate"
+        }
+      ]
+    },
+    {
       name: "Maanas Kollegal",
       games: [
         { id: 1, opponent: "USC", result: "win", date: "2025-02-18" },
         { id: 2, opponent: "Berkeley", result: "loss", date: "2025-03-22" }
-      ]
-    },
-    {
-      name: "Falak Tulsi",
-      games: [
-        { id: 1, opponent: "NYU", result: "draw", date: "2025-02-08" },
-        { id: 2, opponent: "MIT", result: "loss", date: "2025-03-30" }
       ]
     }
   ]);
@@ -171,10 +226,10 @@ const GamesPage: React.FC = () => {
   const [selectedMember, setSelectedMember] = useState<string>("");
   const [selectedGame, setSelectedGame] = useState<Game | null>(null);
   
-  //getter function for the selected member's games
+  // Get the selected member's games
   const selectedGames = teamMembers.find(member => member.name === selectedMember)?.games || [];
 
-  //function for format player names based on who played as white/black
+  // Function to format player names based on who played as white/black
   const formatMatchup = (playerName: string, opponentName: string, playedAs?: 'white' | 'black') => {
     if (playedAs === 'white') {
       return `${playerName} vs ${opponentName}`;
@@ -234,7 +289,7 @@ const GamesPage: React.FC = () => {
                           <th className="py-2 px-4 border-b text-left">Time Control</th>
                           <th className="py-2 px-4 border-b text-left">Played As</th>
                           <th className="py-2 px-4 border-b text-left">Result</th>
-                          <th className="py-2 px-4 border-b text-left">Date</th>
+                          <th className="py-2 px-4 border-b text-left">Notes</th>
                           <th className="py-2 px-4 border-b text-left">Actions</th>
                         </tr>
                       </thead>
@@ -248,14 +303,13 @@ const GamesPage: React.FC = () => {
                             <td className="py-2 px-4 border-b">
                               <span className={
                                 game.result === 'win' ? 'text-green-600 font-medium' : 
-                                game.result === 'loss' ? 'text-red-600' : 'text-yellow-600'
+                                game.result === 'loss' ? 'text-red-600' : 
+                                'text-yellow-600'
                               }>
                                 {game.result.charAt(0).toUpperCase() + game.result.slice(1)}
                               </span>
                             </td>
-                            <td className="py-2 px-4 border-b">
-                              {new Date(game.date).toLocaleDateString()}
-                            </td>
+                            <td className="py-2 px-4 border-b">{game.notes || "-"}</td>
                             <td className="py-2 px-4 border-b">
                               {game.chessComId ? (
                                 <button 
