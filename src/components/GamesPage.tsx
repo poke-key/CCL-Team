@@ -8,6 +8,7 @@ interface Game {
   date: string;
   chessComId?: string; // Chess.com embed ID
   round?: string;
+  timeControl?: string;
 }
 
 interface TeamMember {
@@ -26,24 +27,54 @@ const GamesPage: React.FC = () => {
           opponent: "Chess_nut_Tree", 
           result: "win", 
           date: "2025-04-05",
-          chessComId: "13139518", // Chess.com game ID for Round 1
-          round: "Round 1"
+          chessComId: "13139518",
+          round: "Round 1",
+          timeControl: "5+2"
         },
         { 
           id: 2, 
           opponent: "Chyessirree", 
           result: "loss", 
           date: "2025-04-05",
-          chessComId: "13139626", // Chess.com game ID for Round 2
-          round: "Round 2"
+          chessComId: "13139626",
+          round: "Round 2",
+          timeControl: "5+2"
         },
         { 
           id: 3, 
           opponent: "lasdw", 
           result: "win", 
           date: "2025-04-05",
-          chessComId: "13139646", // Chess.com game ID for Round 3
-          round: "Round 3"
+          chessComId: "13139646",
+          round: "Round 3",
+          timeControl: "5+2"
+        },
+        { 
+          id: 4, 
+          opponent: "ComingForCM", 
+          result: "win", 
+          date: "2025-04-05",
+          chessComId: "13139654",
+          round: "Round 4",
+          timeControl: "5+2"
+        },
+        { 
+          id: 5, 
+          opponent: "ComingForCM", 
+          result: "win", 
+          date: "2025-04-05",
+          chessComId: "13139656",
+          round: "Round 5",
+          timeControl: "3+2"
+        },
+        { 
+          id: 6, 
+          opponent: "ComingForCM", 
+          result: "win", 
+          date: "2025-04-05",
+          chessComId: "13139662",
+          round: "Round 6 (Final)",
+          timeControl: "1+2"
         }
       ]
     },
@@ -123,6 +154,7 @@ const GamesPage: React.FC = () => {
                         <tr className="bg-gray-100">
                           <th className="py-2 px-4 border-b text-left">Opponent</th>
                           <th className="py-2 px-4 border-b text-left">Round</th>
+                          <th className="py-2 px-4 border-b text-left">Time Control</th>
                           <th className="py-2 px-4 border-b text-left">Result</th>
                           <th className="py-2 px-4 border-b text-left">Date</th>
                           <th className="py-2 px-4 border-b text-left">Actions</th>
@@ -133,6 +165,7 @@ const GamesPage: React.FC = () => {
                           <tr key={game.id} className="hover:bg-gray-50">
                             <td className="py-2 px-4 border-b">{game.opponent}</td>
                             <td className="py-2 px-4 border-b">{game.round || `Game ${game.id}`}</td>
+                            <td className="py-2 px-4 border-b">{game.timeControl || "-"}</td>
                             <td className="py-2 px-4 border-b">
                               <span className={
                                 game.result === 'win' ? 'text-green-600 font-medium' : 
@@ -170,7 +203,7 @@ const GamesPage: React.FC = () => {
                   <div className="mt-8 border-t pt-6">
                     <ChessGameEmbed 
                       gameId={selectedGame.chessComId}
-                      title={`${selectedGame.round || 'Game'}: ${selectedMember} vs ${selectedGame.opponent}`}
+                      title={`${selectedGame.round || 'Game'}: ${selectedMember} vs ${selectedGame.opponent} (${selectedGame.timeControl || 'Standard Time'})`}
                     />
                   </div>
                 )}
