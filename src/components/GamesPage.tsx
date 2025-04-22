@@ -434,6 +434,59 @@ const GamesPage: React.FC = () => {
       notes: "Player username: SuperMaanas",
       collegeTeam: "uwaterloo-b",
       playerName: "Maanas Kollegal"
+    },
+    // Maanas vs University of Texas at Austin - D
+    {
+      id: 33,
+      opponent: "ChessCraze012",
+      result: "draw",
+      date: "2025-03-01",
+      chessComId: "13144500",
+      round: "Round 1",
+      timeControl: "5+2",
+      playedAs: "black",
+      notes: "Player username: SuperMaanas",
+      collegeTeam: "texas-austin-d",
+      playerName: "Maanas Kollegal"
+    },
+    {
+      id: 34,
+      opponent: "DieRoten4002",
+      result: "win",
+      date: "2025-03-01",
+      chessComId: "13144502",
+      round: "Round 2",
+      timeControl: "5+2",
+      playedAs: "white",
+      notes: "Player username: SuperMaanas",
+      collegeTeam: "texas-austin-d",
+      playerName: "Maanas Kollegal"
+    },
+    {
+      id: 35,
+      opponent: "DrqgonRage",
+      result: "win",
+      date: "2025-03-01",
+      chessComId: "13144504",
+      round: "Round 3",
+      timeControl: "5+2",
+      playedAs: "white",
+      notes: "Player username: SuperMaanas",
+      collegeTeam: "texas-austin-d",
+      playerName: "Maanas Kollegal"
+    },
+    {
+      id: 36,
+      opponent: "KnifeEffSix",
+      result: "draw",
+      date: "2025-03-01",
+      chessComId: "13144506",
+      round: "Round 4",
+      timeControl: "5+2",
+      playedAs: "black",
+      notes: "Player username: SuperMaanas",
+      collegeTeam: "texas-austin-d",
+      playerName: "Maanas Kollegal"
     }
   ];
 
