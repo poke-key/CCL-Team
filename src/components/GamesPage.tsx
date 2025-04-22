@@ -9,6 +9,7 @@ interface Game {
   chessComId?: string; // Chess.com embed ID
   round?: string;
   timeControl?: string;
+  playedAs?: 'white' | 'black';
 }
 
 interface TeamMember {
@@ -29,7 +30,8 @@ const GamesPage: React.FC = () => {
           date: "2025-04-05",
           chessComId: "13139518",
           round: "Round 1",
-          timeControl: "5+2"
+          timeControl: "5+2",
+          playedAs: "black"
         },
         { 
           id: 2, 
@@ -38,7 +40,8 @@ const GamesPage: React.FC = () => {
           date: "2025-04-05",
           chessComId: "13139626",
           round: "Round 2",
-          timeControl: "5+2"
+          timeControl: "5+2",
+          playedAs: "black"
         },
         { 
           id: 3, 
@@ -47,7 +50,8 @@ const GamesPage: React.FC = () => {
           date: "2025-04-05",
           chessComId: "13139646",
           round: "Round 3",
-          timeControl: "5+2"
+          timeControl: "5+2",
+          playedAs: "black"
         },
         { 
           id: 4, 
@@ -56,7 +60,8 @@ const GamesPage: React.FC = () => {
           date: "2025-04-05",
           chessComId: "13139654",
           round: "Round 4",
-          timeControl: "5+2"
+          timeControl: "5+2",
+          playedAs: "white"
         },
         { 
           id: 5, 
@@ -65,7 +70,8 @@ const GamesPage: React.FC = () => {
           date: "2025-04-05",
           chessComId: "13139656",
           round: "Round 5",
-          timeControl: "3+2"
+          timeControl: "3+2",
+          playedAs: "black"
         },
         { 
           id: 6, 
@@ -74,7 +80,53 @@ const GamesPage: React.FC = () => {
           date: "2025-04-05",
           chessComId: "13139662",
           round: "Round 6 (Final)",
-          timeControl: "1+2"
+          timeControl: "1+2",
+          playedAs: "white"
+        }
+      ]
+    },
+    {
+      name: "Vedh Vasu",
+      games: [
+        {
+          id: 1,
+          opponent: "lasdw",
+          result: "win",
+          date: "2025-04-05",
+          chessComId: "13139798",
+          round: "Round 1",
+          timeControl: "5+2",
+          playedAs: "white"
+        },
+        {
+          id: 2,
+          opponent: "ComingForCM",
+          result: "loss",
+          date: "2025-04-05",
+          chessComId: "13139802",
+          round: "Round 2",
+          timeControl: "5+2",
+          playedAs: "black"
+        },
+        {
+          id: 3,
+          opponent: "Chess_nut_Tree",
+          result: "win",
+          date: "2025-04-05",
+          chessComId: "13139810",
+          round: "Round 3",
+          timeControl: "5+2",
+          playedAs: "white"
+        },
+        {
+          id: 4,
+          opponent: "Chyessirree",
+          result: "win",
+          date: "2025-04-05",
+          chessComId: "13139814",
+          round: "Round 4",
+          timeControl: "5+2",
+          playedAs: "black"
         }
       ]
     },
@@ -83,13 +135,6 @@ const GamesPage: React.FC = () => {
       games: [
         { id: 1, opponent: "USC", result: "win", date: "2025-02-18" },
         { id: 2, opponent: "Berkeley", result: "loss", date: "2025-03-22" }
-      ]
-    },
-    {
-      name: "Vedh Vasu",
-      games: [
-        { id: 1, opponent: "UCSD", result: "win", date: "2025-02-25" },
-        { id: 2, opponent: "Columbia University", result: "win", date: "2025-03-15" }
       ]
     },
     {
@@ -155,6 +200,7 @@ const GamesPage: React.FC = () => {
                           <th className="py-2 px-4 border-b text-left">Opponent</th>
                           <th className="py-2 px-4 border-b text-left">Round</th>
                           <th className="py-2 px-4 border-b text-left">Time Control</th>
+                          <th className="py-2 px-4 border-b text-left">Played As</th>
                           <th className="py-2 px-4 border-b text-left">Result</th>
                           <th className="py-2 px-4 border-b text-left">Date</th>
                           <th className="py-2 px-4 border-b text-left">Actions</th>
@@ -166,6 +212,7 @@ const GamesPage: React.FC = () => {
                             <td className="py-2 px-4 border-b">{game.opponent}</td>
                             <td className="py-2 px-4 border-b">{game.round || `Game ${game.id}`}</td>
                             <td className="py-2 px-4 border-b">{game.timeControl || "-"}</td>
+                            <td className="py-2 px-4 border-b">{game.playedAs ? game.playedAs.charAt(0).toUpperCase() + game.playedAs.slice(1) : "-"}</td>
                             <td className="py-2 px-4 border-b">
                               <span className={
                                 game.result === 'win' ? 'text-green-600 font-medium' : 
@@ -203,7 +250,7 @@ const GamesPage: React.FC = () => {
                   <div className="mt-8 border-t pt-6">
                     <ChessGameEmbed 
                       gameId={selectedGame.chessComId}
-                      title={`${selectedGame.round || 'Game'}: ${selectedMember} vs ${selectedGame.opponent} (${selectedGame.timeControl || 'Standard Time'})`}
+                      title={`${selectedGame.round || 'Game'}: ${selectedGame.playedAs === 'white' ? `${selectedMember} vs ${selectedGame.opponent}` : `${selectedGame.opponent} vs ${selectedMember}`} (${selectedGame.timeControl || 'Standard Time'})`}
                     />
                   </div>
                 )}
