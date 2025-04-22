@@ -15,10 +15,10 @@ interface Game {
   playerName: string;
 }
 
-interface TeamMember {
-  name: string;
-  games: Game[];
-}
+// interface TeamMember {
+//   name: string;
+//   games: Game[];
+// }
 
 interface CollegeTeam {
   name: string;
