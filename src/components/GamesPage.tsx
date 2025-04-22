@@ -215,7 +215,7 @@ const GamesPage: React.FC = () => {
     {
       id: 15,
       opponent: "N/A",
-      result: "draw",
+      result: "loss",
       date: "2025-04-05",
       round: "Round 3",
       timeControl: "N/A",
@@ -226,7 +226,7 @@ const GamesPage: React.FC = () => {
     {
       id: 16,
       opponent: "N/A",
-      result: "draw",
+      result: "loss",
       date: "2025-04-05",
       round: "Round 4",
       timeControl: "N/A",
@@ -237,7 +237,7 @@ const GamesPage: React.FC = () => {
     {
       id: 17,
       opponent: "N/A",
-      result: "draw",
+      result: "loss",
       date: "2025-04-05",
       round: "Round 5",
       timeControl: "N/A",
@@ -248,7 +248,7 @@ const GamesPage: React.FC = () => {
     {
       id: 18,
       opponent: "N/A",
-      result: "draw",
+      result: "loss",
       date: "2025-04-05",
       round: "Round 6",
       timeControl: "N/A",
