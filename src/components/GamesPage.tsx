@@ -15,11 +15,6 @@ interface Game {
   playerName: string;
 }
 
-// interface TeamMember {
-//   name: string;
-//   games: Game[];
-// }
-
 interface CollegeTeam {
   name: string;
   id: string;
@@ -239,7 +234,7 @@ const GamesPage: React.FC = () => {
     {
       id: 17,
       opponent: "KnifeEffSix",
-      result: "win",
+      result: "loss",
       date: "2025-03-01",
       chessComId: "13144104",
       round: "Round 1",
