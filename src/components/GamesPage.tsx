@@ -273,56 +273,66 @@ const GamesPage: React.FC = () => {
     },
     {
       id: 20,
-      opponent: "N/A",
-      result: "draw",
+      opponent: "Chess_nut_Tree",
+      result: "win",
       date: "2025-04-05",
+      chessComId: "13140132",
       round: "Round 2",
-      timeControl: "N/A",
-      notes: "Game not recorded",
+      timeControl: "5+2",
+      playedAs: "white",
+      notes: "Player username: SuperMaanas",
       collegeTeam: "uwaterloo-b",
       playerName: "Maanas Kollegal"
     },
     {
       id: 21,
-      opponent: "N/A",
-      result: "draw",
+      opponent: "ComingForCM",
+      result: "loss",
       date: "2025-04-05",
+      chessComId: "13140136",
       round: "Round 3",
-      timeControl: "N/A",
-      notes: "Game not recorded",
+      timeControl: "5+2",
+      playedAs: "black",
+      notes: "Player username: SuperMaanas",
       collegeTeam: "uwaterloo-b",
       playerName: "Maanas Kollegal"
     },
     {
       id: 22,
-      opponent: "N/A",
-      result: "draw",
+      opponent: "lasdw",
+      result: "loss",
       date: "2025-04-05",
+      chessComId: "13140148",
       round: "Round 4",
-      timeControl: "N/A",
-      notes: "Game not recorded",
+      timeControl: "5+2",
+      playedAs: "white",
+      notes: "Player username: SuperMaanas",
       collegeTeam: "uwaterloo-b",
       playerName: "Maanas Kollegal"
     },
     {
       id: 23,
-      opponent: "N/A",
-      result: "draw",
+      opponent: "lasdw",
+      result: "win",
       date: "2025-04-05",
+      chessComId: "13140152",
       round: "Round 5",
-      timeControl: "N/A",
-      notes: "Game not recorded",
+      timeControl: "3+2",
+      playedAs: "black",
+      notes: "Player username: SuperMaanas",
       collegeTeam: "uwaterloo-b",
       playerName: "Maanas Kollegal"
     },
     {
       id: 24,
-      opponent: "N/A",
-      result: "draw",
+      opponent: "lasdw",
+      result: "win",
       date: "2025-04-05",
-      round: "Round 6",
-      timeControl: "N/A",
-      notes: "Game not recorded",
+      chessComId: "13140156",
+      round: "Round 6 (Final)",
+      timeControl: "1+2",
+      playedAs: "white",
+      notes: "Player username: SuperMaanas",
       collegeTeam: "uwaterloo-b",
       playerName: "Maanas Kollegal"
     }
@@ -353,6 +363,16 @@ const GamesPage: React.FC = () => {
       return `${opponentName} vs ${playerName}`;
     }
     return `${playerName} vs ${opponentName}`;
+  };
+
+  // Function to get player performance
+  const getPlayerPerformance = (playerName: string) => {
+    const playerGames = collegeTeamGames.filter(game => game.playerName === playerName);
+    const wins = playerGames.filter(game => game.result === 'win').length;
+    const losses = playerGames.filter(game => game.result === 'loss').length;
+    const draws = playerGames.filter(game => game.result === 'draw').length;
+    
+    return { wins, losses, draws };
   };
 
   return (
@@ -494,6 +514,24 @@ const GamesPage: React.FC = () => {
                           {collegeTeamGames.filter(game => game.result === 'draw').length}
                         </p>
                         <p className="text-sm text-yellow-700">Draws</p>
+                      </div>
+                    </div>
+                    
+                    {/* Player performance breakdown */}
+                    <div className="mt-4">
+                      <h6 className="font-medium mb-2">Player Performance</h6>
+                      <div className="grid grid-cols-4 gap-2">
+                        {playerNames.map(name => {
+                          const performance = getPlayerPerformance(name);
+                          return (
+                            <div key={name} className="p-2 bg-white rounded shadow-sm">
+                              <p className="font-medium text-sm">{name}</p>
+                              <p className="text-xs text-gray-700">
+                                {performance.wins}W - {performance.losses}L - {performance.draws}D
+                              </p>
+                            </div>
+                          );
+                        })}
                       </div>
                     </div>
                   </div>
