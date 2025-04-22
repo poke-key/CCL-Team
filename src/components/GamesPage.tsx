@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import ChessGameEmbed from './ChessGameEmbed';
 
 interface Game {
@@ -7,6 +7,7 @@ interface Game {
   result: 'win' | 'loss' | 'draw';
   date: string;
   chessComId?: string; // Chess.com embed ID
+  round?: string;
 }
 
 interface TeamMember {
@@ -25,13 +26,16 @@ const GamesPage: React.FC = () => {
           opponent: "Chess_nut_Tree", 
           result: "win", 
           date: "2025-04-05",
-          chessComId: "13139518" // The actual Chess.com game ID from your embed
+          chessComId: "13139518", // Chess.com game ID for Round 1
+          round: "Round 1"
         },
         { 
           id: 2, 
-          opponent: "UCLA", 
-          result: "draw", 
-          date: "2025-03-05" 
+          opponent: "Chyessirree", 
+          result: "loss", 
+          date: "2025-04-05",
+          chessComId: "13139626", // Chess.com game ID for Round 2
+          round: "Round 2"
         }
       ]
     },
@@ -110,6 +114,7 @@ const GamesPage: React.FC = () => {
                       <thead>
                         <tr className="bg-gray-100">
                           <th className="py-2 px-4 border-b text-left">Opponent</th>
+                          <th className="py-2 px-4 border-b text-left">Round</th>
                           <th className="py-2 px-4 border-b text-left">Result</th>
                           <th className="py-2 px-4 border-b text-left">Date</th>
                           <th className="py-2 px-4 border-b text-left">Actions</th>
@@ -119,6 +124,7 @@ const GamesPage: React.FC = () => {
                         {selectedGames.map((game) => (
                           <tr key={game.id} className="hover:bg-gray-50">
                             <td className="py-2 px-4 border-b">{game.opponent}</td>
+                            <td className="py-2 px-4 border-b">{game.round || `Game ${game.id}`}</td>
                             <td className="py-2 px-4 border-b">
                               <span className={
                                 game.result === 'win' ? 'text-green-600 font-medium' : 
@@ -156,7 +162,7 @@ const GamesPage: React.FC = () => {
                   <div className="mt-8 border-t pt-6">
                     <ChessGameEmbed 
                       gameId={selectedGame.chessComId}
-                      title={`Game: ${selectedMember} vs ${selectedGame.opponent}`}
+                      title={`${selectedGame.round || 'Game'}: ${selectedMember} vs ${selectedGame.opponent}`}
                     />
                   </div>
                 )}
