@@ -17,8 +17,9 @@ const ChessGameEmbed: React.FC<ChessGameEmbedProps> = ({
       if (e.data && e.data.id === gameId && containerRef.current) {
         const iframe = containerRef.current.querySelector(`iframe#${gameId}`) as HTMLIFrameElement | null;
         if (iframe) {
-          // Set a fixed height that shows the complete board
-          iframe.style.height = '600px';
+          // Adjust height to be more compact to ensure the entire board is visible
+          // The original +37 was making it too tall
+          iframe.style.height = `${e.data.frameHeight}px`;
         }
       }
     };
@@ -41,34 +42,15 @@ const ChessGameEmbed: React.FC<ChessGameEmbedProps> = ({
           allowTransparency={true}
           style={{ 
             width: '100%', 
-            maxWidth: '600px', // Increased max width
+            maxWidth: '560px', // Set a maximum width
             border: 'none',
-            height: '600px', // Fixed height that shows the complete board
-            margin: '0 auto',
+            minHeight: '450px', // Set a minimum height
+            margin: '0 auto', // Center the iframe
             display: 'block'
           }}
-          // Add layout parameters to show a more compact board
-          src={`https://www.chess.com/emboard?id=${gameId}&layout=minimal&boardSize=large`}
+          src={`https://www.chess.com/emboard?id=${gameId}`}
         ></iframe>
       </div>
-      
-      {/* Add responsive styles inline */}
-      <style jsx>{`
-        .chess-board-container {
-          width: 100%;
-          max-width: 650px;
-          margin: 0 auto;
-          overflow: visible !important;
-        }
-        
-        .chess-game-embed {
-          width: 100%;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          margin-bottom: 2rem;
-        }
-      `}</style>
     </div>
   );
 };
