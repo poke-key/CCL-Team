@@ -36,6 +36,14 @@ const GamesPage: React.FC = () => {
           date: "2025-04-05",
           chessComId: "13139626", // Chess.com game ID for Round 2
           round: "Round 2"
+        },
+        { 
+          id: 3, 
+          opponent: "lasdw", 
+          result: "win", 
+          date: "2025-04-05",
+          chessComId: "13139646", // Chess.com game ID for Round 3
+          round: "Round 3"
         }
       ]
     },
