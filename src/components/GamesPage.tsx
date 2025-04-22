@@ -235,9 +235,63 @@ const GamesPage: React.FC = () => {
       playerName: "Vedh Vasu"
     },
     
-    // Falak vs UWATERLOO TEAM B
+    // Vedh vs University of Texas at Austin - D
     {
       id: 17,
+      opponent: "KnifeEffSix",
+      result: "win",
+      date: "2025-03-01",
+      chessComId: "13144104",
+      round: "Round 1",
+      timeControl: "5+2",
+      playedAs: "white",
+      notes: "Player username: coolguy3949",
+      collegeTeam: "texas-austin-d",
+      playerName: "Vedh Vasu"
+    },
+    {
+      id: 18,
+      opponent: "DrqgonRage",
+      result: "loss",
+      date: "2025-03-01",
+      chessComId: "13144108",
+      round: "Round 2",
+      timeControl: "5+2",
+      playedAs: "black",
+      notes: "Player username: coolguy3949",
+      collegeTeam: "texas-austin-d",
+      playerName: "Vedh Vasu"
+    },
+    {
+      id: 19,
+      opponent: "DieRoten4002",
+      result: "loss",
+      date: "2025-03-01",
+      chessComId: "13144110",
+      round: "Round 3",
+      timeControl: "5+2",
+      playedAs: "black",
+      notes: "Player username: coolguy3949",
+      collegeTeam: "texas-austin-d",
+      playerName: "Vedh Vasu"
+    },
+    {
+      id: 20,
+      opponent: "ChessCraze012",
+      result: "win",
+      date: "2025-03-01",
+      chessComId: "13144118",
+      round: "Round 4",
+      timeControl: "5+2",
+      playedAs: "white",
+      notes: "Player username: coolguy3949",
+      collegeTeam: "texas-austin-d",
+      playerName: "Vedh Vasu"
+    },
+    
+    // Falak vs UWATERLOO TEAM B
+    {
+      id: 21,
       opponent: "ComingForCM",
       result: "loss",
       date: "2025-04-05",
@@ -250,7 +304,7 @@ const GamesPage: React.FC = () => {
       playerName: "Falak Tulsi"
     },
     {
-      id: 18,
+      id: 22,
       opponent: "lasdw",
       result: "loss",
       date: "2025-04-05",
@@ -263,7 +317,7 @@ const GamesPage: React.FC = () => {
       playerName: "Falak Tulsi"
     },
     {
-      id: 19,
+      id: 23,
       opponent: "N/A",
       result: "draw",
       date: "2025-04-05",
@@ -274,7 +328,7 @@ const GamesPage: React.FC = () => {
       playerName: "Falak Tulsi"
     },
     {
-      id: 20,
+      id: 24,
       opponent: "N/A",
       result: "draw",
       date: "2025-04-05",
@@ -285,7 +339,7 @@ const GamesPage: React.FC = () => {
       playerName: "Falak Tulsi"
     },
     {
-      id: 21,
+      id: 25,
       opponent: "N/A",
       result: "draw",
       date: "2025-04-05",
@@ -296,7 +350,7 @@ const GamesPage: React.FC = () => {
       playerName: "Falak Tulsi"
     },
     {
-      id: 22,
+      id: 26,
       opponent: "N/A",
       result: "draw",
       date: "2025-04-05",
@@ -309,7 +363,7 @@ const GamesPage: React.FC = () => {
     
     // Maanas vs UWATERLOO TEAM B
     {
-      id: 23,
+      id: 27,
       opponent: "Chyessirree",
       result: "win",
       date: "2025-04-05",
@@ -322,7 +376,7 @@ const GamesPage: React.FC = () => {
       playerName: "Maanas Kollegal"
     },
     {
-      id: 24,
+      id: 28,
       opponent: "Chess_nut_Tree",
       result: "win",
       date: "2025-04-05",
@@ -335,7 +389,7 @@ const GamesPage: React.FC = () => {
       playerName: "Maanas Kollegal"
     },
     {
-      id: 25,
+      id: 29,
       opponent: "ComingForCM",
       result: "loss",
       date: "2025-04-05",
@@ -348,7 +402,7 @@ const GamesPage: React.FC = () => {
       playerName: "Maanas Kollegal"
     },
     {
-      id: 26,
+      id: 30,
       opponent: "lasdw",
       result: "loss",
       date: "2025-04-05",
@@ -361,7 +415,7 @@ const GamesPage: React.FC = () => {
       playerName: "Maanas Kollegal"
     },
     {
-      id: 27,
+      id: 31,
       opponent: "lasdw",
       result: "win",
       date: "2025-04-05",
@@ -374,7 +428,7 @@ const GamesPage: React.FC = () => {
       playerName: "Maanas Kollegal"
     },
     {
-      id: 28,
+      id: 32,
       opponent: "lasdw",
       result: "win",
       date: "2025-04-05",
@@ -420,7 +474,7 @@ const GamesPage: React.FC = () => {
     const playerGames = collegeTeamGames.filter(game => game.playerName === playerName);
     const wins = playerGames.filter(game => game.result === 'win').length;
     const losses = playerGames.filter(game => game.result === 'loss').length;
-    const draws = playerGames.filter(game => game.result === 'draw').length;
+    const draws = playerGames.filter(game => game.result === 'draw' && game.opponent !== 'N/A').length;
     
     return { wins, losses, draws };
   };
@@ -433,13 +487,19 @@ const GamesPage: React.FC = () => {
     
     const wins = playedGames.filter(game => game.result === 'win').length;
     const losses = playedGames.filter(game => game.result === 'loss').length;
-    const draws = playedGames.filter(game => game.result === 'draw').length;
+    const draws = playedGames.filter(game => game.result === 'draw' && game.opponent !== 'N/A').length;
     
     return { wins, losses, draws };
   };
 
   // Get match results
   const matchResults = getMatchResults();
+  
+  // Calculate match score
+  const calculateMatchScore = () => {
+    const results = getMatchResults();
+    return (results.wins + (results.draws * 0.5));
+  };
 
   return (
     <div className="min-h-screen bg-blue-50 flex flex-col items-center p-4">
@@ -486,24 +546,34 @@ const GamesPage: React.FC = () => {
                 {collegeTeamGames.length > 0 && (
                   <div className="mb-6 p-4 bg-gray-50 rounded-lg">
                     <h5 className="font-medium text-lg mb-2">Match Summary</h5>
-                    <div className="grid grid-cols-3 gap-4 text-center">
-                      <div className="p-3 bg-green-100 rounded">
-                        <p className="text-lg font-bold text-green-800">
-                          {matchResults.wins}
-                        </p>
-                        <p className="text-sm text-green-700">Wins</p>
+                    <div className="grid grid-cols-4 gap-4">
+                      <div className="col-span-3">
+                        <div className="grid grid-cols-3 gap-4 text-center">
+                          <div className="p-3 bg-green-100 rounded">
+                            <p className="text-lg font-bold text-green-800">
+                              {matchResults.wins}
+                            </p>
+                            <p className="text-sm text-green-700">Wins</p>
+                          </div>
+                          <div className="p-3 bg-red-100 rounded">
+                            <p className="text-lg font-bold text-red-800">
+                              {matchResults.losses}
+                            </p>
+                            <p className="text-sm text-red-700">Losses</p>
+                          </div>
+                          <div className="p-3 bg-yellow-100 rounded">
+                            <p className="text-lg font-bold text-yellow-800">
+                              {matchResults.draws}
+                            </p>
+                            <p className="text-sm text-yellow-700">Draws</p>
+                          </div>
+                        </div>
                       </div>
-                      <div className="p-3 bg-red-100 rounded">
-                        <p className="text-lg font-bold text-red-800">
-                          {matchResults.losses}
+                      <div className="p-3 bg-blue-100 rounded text-center">
+                        <p className="text-lg font-bold text-blue-800">
+                          {calculateMatchScore()}
                         </p>
-                        <p className="text-sm text-red-700">Losses</p>
-                      </div>
-                      <div className="p-3 bg-yellow-100 rounded">
-                        <p className="text-lg font-bold text-yellow-800">
-                          {matchResults.draws}
-                        </p>
-                        <p className="text-sm text-yellow-700">Draws</p>
+                        <p className="text-sm text-blue-700">Match Score</p>
                       </div>
                     </div>
                     
@@ -514,12 +584,20 @@ const GamesPage: React.FC = () => {
                         <div className="grid grid-cols-4 gap-2">
                           {playerNames.map(name => {
                             const performance = getPlayerPerformance(name);
+                            const score = performance.wins + (performance.draws * 0.5);
+                            const total = performance.wins + performance.losses + performance.draws;
+                            
                             return (
                               <div key={name} className="p-2 bg-white rounded shadow-sm">
                                 <p className="font-medium text-sm">{name}</p>
                                 <p className="text-xs text-gray-700">
                                   {performance.wins}W - {performance.losses}L - {performance.draws}D
                                 </p>
+                                {total > 0 && (
+                                  <p className="text-xs text-blue-600 mt-1">
+                                    Score: {score}/{total}
+                                  </p>
+                                )}
                               </div>
                             );
                           })}
