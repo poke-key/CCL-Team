@@ -127,6 +127,26 @@ const GamesPage: React.FC = () => {
           round: "Round 4",
           timeControl: "5+2",
           playedAs: "black"
+        },
+        {
+          id: 5,
+          opponent: "Chyessirree",
+          result: "loss",
+          date: "2025-04-05",
+          chessComId: "13139828",
+          round: "Round 5",
+          timeControl: "3+2",
+          playedAs: "white"
+        },
+        {
+          id: 6,
+          opponent: "Chyessirree",
+          result: "win",
+          date: "2025-04-05",
+          chessComId: "13139830",
+          round: "Round 6 (Final)",
+          timeControl: "1+2",
+          playedAs: "black"
         }
       ]
     },
@@ -151,6 +171,16 @@ const GamesPage: React.FC = () => {
   
   // Get the selected member's games
   const selectedGames = teamMembers.find(member => member.name === selectedMember)?.games || [];
+
+  // Function to format player names based on who played as white/black
+  const formatMatchup = (playerName: string, opponentName: string, playedAs?: 'white' | 'black') => {
+    if (playedAs === 'white') {
+      return `${playerName} vs ${opponentName}`;
+    } else if (playedAs === 'black') {
+      return `${opponentName} vs ${playerName}`;
+    }
+    return `${playerName} vs ${opponentName}`;
+  };
 
   return (
     <div className="min-h-screen bg-blue-50 flex flex-col items-center p-4">
@@ -250,7 +280,7 @@ const GamesPage: React.FC = () => {
                   <div className="mt-8 border-t pt-6">
                     <ChessGameEmbed 
                       gameId={selectedGame.chessComId}
-                      title={`${selectedGame.round || 'Game'}: ${selectedGame.playedAs === 'white' ? `${selectedMember} vs ${selectedGame.opponent}` : `${selectedGame.opponent} vs ${selectedMember}`} (${selectedGame.timeControl || 'Standard Time'})`}
+                      title={`${selectedGame.round || 'Game'}: ${formatMatchup(selectedMember, selectedGame.opponent, selectedGame.playedAs)} (${selectedGame.timeControl || 'Standard Time'})`}
                     />
                   </div>
                 )}
