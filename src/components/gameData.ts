@@ -520,5 +520,54 @@ export const allGames: Game[] = [
     notes: "Player username: skizzers13",
     collegeTeam: "texas-austin-d",
     playerName: "Falak Tulsi"
+  },
+  // Kunal vs UNIZAMBEZEA A
+  {
+    id: 41,
+    opponent: "Elio_3",
+    result: "win",
+    date: "2025-02-08",
+    chessComId: "13144726",
+    round: "Round 1",
+    timeControl: "5+2",
+    playedAs: "black",
+    collegeTeam: "unizambezea-a",
+    playerName: "Kunal Shrivastav"
+  },
+  {
+    id: 42,
+    opponent: "Chissale19QI",
+    result: "win",
+    date: "2025-02-08",
+    chessComId: "13144736",
+    round: "Round 2",
+    timeControl: "5+2",
+    playedAs: "white",
+    collegeTeam: "unizambezea-a",
+    playerName: "Kunal Shrivastav"
+  },
+  {
+    id: 43,
+    opponent: "agm2002",
+    result: "win",
+    date: "2025-02-08",
+    chessComId: "13144744",
+    round: "Round 3",
+    timeControl: "5+2",
+    playedAs: "black",
+    collegeTeam: "unizambezea-a",
+    playerName: "Kunal Shrivastav"
+  },
+  {
+    id: 44,
+    opponent: "jojoabdul",
+    result: "win",
+    date: "2025-02-08",
+    chessComId: "13144746",
+    round: "Round 4",
+    timeControl: "5+2",
+    playedAs: "white",
+    collegeTeam: "unizambezea-a",
+    playerName: "Kunal Shrivastav"
   }
 ];
