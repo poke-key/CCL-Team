@@ -972,5 +972,136 @@ export const allGames: Game[] = [
   },
 
   //vedh vasu's games against Univ-Washington 03/08
+  // Vedh games against Univ. Washington
+{
+  id: 76,
+  opponent: "LionBlade45",
+  result: "win",
+  date: "2025-03-08",
+  chessComId: "13145730",
+  round: "Round 1",
+  timeControl: "5+2",
+  playedAs: "white",
+  notes: "Player username: coolguy3949",
+  collegeTeam: "washington-b",
+  playerName: "Vedh Vasu"
+},
+{
+  id: 77,
+  opponent: "jkmckenzzz",
+  result: "loss",
+  date: "2025-03-08",
+  chessComId: "13145732",
+  round: "Round 2",
+  timeControl: "5+2",
+  playedAs: "black",
+  notes: "Player username: coolguy3949",
+  collegeTeam: "washington-b",
+  playerName: "Vedh Vasu"
+},
+{
+  id: 78,
+  opponent: "sdpandit",
+  result: "win",
+  date: "2025-03-08",
+  chessComId: "13145734",
+  round: "Round 3",
+  timeControl: "5+2",
+  playedAs: "white",
+  notes: "Player username: coolguy3949",
+  collegeTeam: "washington-b",
+  playerName: "Vedh Vasu"
+},
+{
+  id: 79,
+  opponent: "SirPoetVic",
+  result: "win",
+  date: "2025-03-08",
+  chessComId: "13145736",
+  round: "Round 4",
+  timeControl: "5+2",
+  playedAs: "black",
+  notes: "Player username: coolguy3949",
+  collegeTeam: "washington-b",
+  playerName: "Vedh Vasu"
+},
+{
+  id: 80,
+  opponent: "SirPoetVic",
+  result: "win",
+  date: "2025-03-08",
+  chessComId: "13145738",
+  round: "Round 5",
+  timeControl: "3+2",
+  playedAs: "white",
+  notes: "Player username: coolguy3949",
+  collegeTeam: "washington-b",
+  playerName: "Vedh Vasu"
+},
+{
+  id: 81,
+  opponent: "SirPoetVic",
+  result: "loss",
+  date: "2025-03-08",
+  chessComId: "13145740",
+  round: "Round 6",
+  timeControl: "1+2",
+  playedAs: "black",
+  notes: "Player username: coolguy3949",
+  collegeTeam: "washington-b",
+  playerName: "Vedh Vasu"
+},
+{
+  id: 82,
+  opponent: "SirPoetVic",
+  result: "win",
+  date: "2025-03-08",
+  chessComId: "13145742",
+  round: "Round 7",
+  timeControl: "1+2",
+  playedAs: "white",
+  notes: "Player username: coolguy3949",
+  collegeTeam: "washington-b",
+  playerName: "Vedh Vasu"
+},
+{
+  id: 83,
+  opponent: "SirPoetVic",
+  result: "win",
+  date: "2025-03-08",
+  chessComId: "13145744",
+  round: "Round 8",
+  timeControl: "1+2",
+  playedAs: "black",
+  notes: "Player username: coolguy3949",
+  collegeTeam: "washington-b",
+  playerName: "Vedh Vasu"
+},
+{
+  id: 84,
+  opponent: "SirPoetVic",
+  result: "win",
+  date: "2025-03-08",
+  chessComId: "13145746",
+  round: "Round 9",
+  timeControl: "1+2",
+  playedAs: "white",
+  notes: "Player username: coolguy3949",
+  collegeTeam: "washington-b",
+  playerName: "Vedh Vasu"
+},
+{
+  id: 85,
+  opponent: "SirPoetVic",
+  result: "loss",
+  date: "2025-03-08",
+  chessComId: "13145748",
+  round: "Round 10",
+  timeControl: "1+2",
+  playedAs: "black",
+  notes: "Player username: coolguy3949",
+  collegeTeam: "washington-b",
+  playerName: "Vedh Vasu"
+}
 
 ];
