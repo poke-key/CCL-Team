@@ -1,0 +1,524 @@
+// gameData.ts
+import { Game, CollegeTeam } from './types';
+
+// College teams we played against
+export const collegeTeams: CollegeTeam[] = [
+  { name: "CCL UWATERLOO TEAM B W25", id: "uwaterloo-b" },
+  { name: "University of Washington-B", id: "washington-b" },
+  { name: "VIT I 2025 (INT CCL)", id: "vit-i" },
+  { name: "University of Texas at Austin - D", id: "texas-austin-d" },
+  { name: "UNIZAMBEZEA A", id: "unizambezea-a" },
+];
+
+// All games data
+export const allGames: Game[] = [
+  // Kunal vs UWATERLOO TEAM B
+  { 
+    id: 1, 
+    opponent: "Chess_nut_Tree", 
+    result: "win", 
+    date: "2025-04-05",
+    chessComId: "13139518",
+    round: "Round 1",
+    timeControl: "5+2",
+    playedAs: "black",
+    collegeTeam: "uwaterloo-b",
+    playerName: "Kunal Shrivastav"
+  },
+  { 
+    id: 2, 
+    opponent: "Chyessirree", 
+    result: "loss", 
+    date: "2025-04-05",
+    chessComId: "13139626",
+    round: "Round 2",
+    timeControl: "5+2",
+    playedAs: "black",
+    collegeTeam: "uwaterloo-b",
+    playerName: "Kunal Shrivastav"
+  },
+  { 
+    id: 3, 
+    opponent: "lasdw", 
+    result: "win", 
+    date: "2025-04-05",
+    chessComId: "13139646",
+    round: "Round 3",
+    timeControl: "5+2",
+    playedAs: "black",
+    collegeTeam: "uwaterloo-b",
+    playerName: "Kunal Shrivastav"
+  },
+  { 
+    id: 4, 
+    opponent: "ComingForCM", 
+    result: "win", 
+    date: "2025-04-05",
+    chessComId: "13139654",
+    round: "Round 4",
+    timeControl: "5+2",
+    playedAs: "white",
+    collegeTeam: "uwaterloo-b",
+    playerName: "Kunal Shrivastav"
+  },
+  { 
+    id: 5, 
+    opponent: "ComingForCM", 
+    result: "win", 
+    date: "2025-04-05",
+    chessComId: "13139656",
+    round: "Round 5",
+    timeControl: "3+2",
+    playedAs: "black",
+    collegeTeam: "uwaterloo-b",
+    playerName: "Kunal Shrivastav"
+  },
+  { 
+    id: 6, 
+    opponent: "ComingForCM", 
+    result: "win", 
+    date: "2025-04-05",
+    chessComId: "13139662",
+    round: "Round 6 (Final)",
+    timeControl: "1+2",
+    playedAs: "white",
+    collegeTeam: "uwaterloo-b",
+    playerName: "Kunal Shrivastav"
+  },
+  
+  // Kunal vs University of Texas at Austin - D
+  {
+    id: 7,
+    opponent: "DieRoten4002",
+    result: "win",
+    date: "2025-03-01",
+    chessComId: "13143978",
+    round: "Round 1",
+    timeControl: "5+2",
+    playedAs: "black",
+    collegeTeam: "texas-austin-d",
+    playerName: "Kunal Shrivastav"
+  },
+  {
+    id: 8,
+    opponent: "ChessCraze012",
+    result: "win",
+    date: "2025-03-01",
+    chessComId: "13143994",
+    round: "Round 2",
+    timeControl: "5+2",
+    playedAs: "white",
+    collegeTeam: "texas-austin-d",
+    playerName: "Kunal Shrivastav"
+  },
+  {
+    id: 9,
+    opponent: "KnifeEffSix",
+    result: "win",
+    date: "2025-03-01",
+    chessComId: "13144002",
+    round: "Round 3",
+    timeControl: "5+2",
+    playedAs: "white",
+    collegeTeam: "texas-austin-d",
+    playerName: "Kunal Shrivastav"
+  },
+  {
+    id: 10,
+    opponent: "DrqgonRage",
+    result: "win",
+    date: "2025-03-01",
+    chessComId: "13144004",
+    round: "Round 4",
+    timeControl: "5+2",
+    playedAs: "black",
+    collegeTeam: "texas-austin-d",
+    playerName: "Kunal Shrivastav"
+  },
+  
+  // Vedh vs UWATERLOO TEAM B
+  {
+    id: 11,
+    opponent: "lasdw",
+    result: "win",
+    date: "2025-04-05",
+    chessComId: "13139798",
+    round: "Round 1",
+    timeControl: "5+2",
+    playedAs: "white",
+    collegeTeam: "uwaterloo-b",
+    playerName: "Vedh Vasu"
+  },
+  {
+    id: 12,
+    opponent: "ComingForCM",
+    result: "loss",
+    date: "2025-04-05",
+    chessComId: "13139802",
+    round: "Round 2",
+    timeControl: "5+2",
+    playedAs: "black",
+    collegeTeam: "uwaterloo-b",
+    playerName: "Vedh Vasu"
+  },
+  {
+    id: 13,
+    opponent: "Chess_nut_Tree",
+    result: "win",
+    date: "2025-04-05",
+    chessComId: "13139810",
+    round: "Round 3",
+    timeControl: "5+2",
+    playedAs: "white",
+    collegeTeam: "uwaterloo-b",
+    playerName: "Vedh Vasu"
+  },
+  {
+    id: 14,
+    opponent: "Chyessirree",
+    result: "win",
+    date: "2025-04-05",
+    chessComId: "13139814",
+    round: "Round 4",
+    timeControl: "5+2",
+    playedAs: "black",
+    collegeTeam: "uwaterloo-b",
+    playerName: "Vedh Vasu"
+  },
+  {
+    id: 15,
+    opponent: "Chyessirree",
+    result: "loss",
+    date: "2025-04-05",
+    chessComId: "13139828",
+    round: "Round 5",
+    timeControl: "3+2",
+    playedAs: "white",
+    collegeTeam: "uwaterloo-b",
+    playerName: "Vedh Vasu"
+  },
+  {
+    id: 16,
+    opponent: "Chyessirree",
+    result: "win",
+    date: "2025-04-05",
+    chessComId: "13139830",
+    round: "Round 6 (Final)",
+    timeControl: "1+2",
+    playedAs: "black",
+    collegeTeam: "uwaterloo-b",
+    playerName: "Vedh Vasu"
+  },
+  
+  // Vedh vs University of Texas at Austin - D
+  {
+    id: 17,
+    opponent: "KnifeEffSix",
+    result: "loss",
+    date: "2025-03-01",
+    chessComId: "13144104",
+    round: "Round 1",
+    timeControl: "5+2",
+    playedAs: "white",
+    notes: "Player username: coolguy3949",
+    collegeTeam: "texas-austin-d",
+    playerName: "Vedh Vasu"
+  },
+  {
+    id: 18,
+    opponent: "DrqgonRage",
+    result: "loss",
+    date: "2025-03-01",
+    chessComId: "13144108",
+    round: "Round 2",
+    timeControl: "5+2",
+    playedAs: "black",
+    notes: "Player username: coolguy3949",
+    collegeTeam: "texas-austin-d",
+    playerName: "Vedh Vasu"
+  },
+  {
+    id: 19,
+    opponent: "DieRoten4002",
+    result: "loss",
+    date: "2025-03-01",
+    chessComId: "13144110",
+    round: "Round 3",
+    timeControl: "5+2",
+    playedAs: "black",
+    notes: "Player username: coolguy3949",
+    collegeTeam: "texas-austin-d",
+    playerName: "Vedh Vasu"
+  },
+  {
+    id: 20,
+    opponent: "ChessCraze012",
+    result: "win",
+    date: "2025-03-01",
+    chessComId: "13144118",
+    round: "Round 4",
+    timeControl: "5+2",
+    playedAs: "white",
+    notes: "Player username: coolguy3949",
+    collegeTeam: "texas-austin-d",
+    playerName: "Vedh Vasu"
+  },
+  
+  // Falak vs UWATERLOO TEAM B
+  {
+    id: 21,
+    opponent: "ComingForCM",
+    result: "loss",
+    date: "2025-04-05",
+    chessComId: "13139882",
+    round: "Round 1",
+    timeControl: "5+2",
+    playedAs: "white",
+    notes: "Player username: skizzers13",
+    collegeTeam: "uwaterloo-b",
+    playerName: "Falak Tulsi"
+  },
+  {
+    id: 22,
+    opponent: "lasdw",
+    result: "loss",
+    date: "2025-04-05",
+    chessComId: "13139884",
+    round: "Round 2",
+    timeControl: "5+2",
+    playedAs: "black",
+    notes: "Player username: skizzers13",
+    collegeTeam: "uwaterloo-b",
+    playerName: "Falak Tulsi"
+  },
+  {
+    id: 23,
+    opponent: "N/A",
+    result: "draw",
+    date: "2025-04-05",
+    round: "Round 3",
+    timeControl: "N/A",
+    notes: "Player did not participate",
+    collegeTeam: "uwaterloo-b",
+    playerName: "Falak Tulsi"
+  },
+  {
+    id: 24,
+    opponent: "N/A",
+    result: "draw",
+    date: "2025-04-05",
+    round: "Round 4",
+    timeControl: "N/A",
+    notes: "Player did not participate",
+    collegeTeam: "uwaterloo-b",
+    playerName: "Falak Tulsi"
+  },
+  {
+    id: 25,
+    opponent: "N/A",
+    result: "draw",
+    date: "2025-04-05",
+    round: "Round 5",
+    timeControl: "N/A",
+    notes: "Player did not participate",
+    collegeTeam: "uwaterloo-b",
+    playerName: "Falak Tulsi"
+  },
+  {
+    id: 26,
+    opponent: "N/A",
+    result: "draw",
+    date: "2025-04-05",
+    round: "Round 6",
+    timeControl: "N/A",
+    notes: "Player did not participate",
+    collegeTeam: "uwaterloo-b",
+    playerName: "Falak Tulsi"
+  },
+  
+  // Maanas vs UWATERLOO TEAM B
+  {
+    id: 27,
+    opponent: "Chyessirree",
+    result: "win",
+    date: "2025-04-05",
+    chessComId: "13140094",
+    round: "Round 1",
+    timeControl: "5+2",
+    playedAs: "black",
+    notes: "Player username: SuperMaanas",
+    collegeTeam: "uwaterloo-b",
+    playerName: "Maanas Kollegal"
+  },
+  {
+    id: 28,
+    opponent: "Chess_nut_Tree",
+    result: "win",
+    date: "2025-04-05",
+    chessComId: "13140132",
+    round: "Round 2",
+    timeControl: "5+2",
+    playedAs: "white",
+    notes: "Player username: SuperMaanas",
+    collegeTeam: "uwaterloo-b",
+    playerName: "Maanas Kollegal"
+  },
+  {
+    id: 29,
+    opponent: "ComingForCM",
+    result: "loss",
+    date: "2025-04-05",
+    chessComId: "13140136",
+    round: "Round 3",
+    timeControl: "5+2",
+    playedAs: "black",
+    notes: "Player username: SuperMaanas",
+    collegeTeam: "uwaterloo-b",
+    playerName: "Maanas Kollegal"
+  },
+  {
+    id: 30,
+    opponent: "lasdw",
+    result: "loss",
+    date: "2025-04-05",
+    chessComId: "13140148",
+    round: "Round 4",
+    timeControl: "5+2",
+    playedAs: "white",
+    notes: "Player username: SuperMaanas",
+    collegeTeam: "uwaterloo-b",
+    playerName: "Maanas Kollegal"
+  },
+  {
+    id: 31,
+    opponent: "lasdw",
+    result: "win",
+    date: "2025-04-05",
+    chessComId: "13140152",
+    round: "Round 5",
+    timeControl: "3+2",
+    playedAs: "black",
+    notes: "Player username: SuperMaanas",
+    collegeTeam: "uwaterloo-b",
+    playerName: "Maanas Kollegal"
+  },
+  {
+    id: 32,
+    opponent: "lasdw",
+    result: "win",
+    date: "2025-04-05",
+    chessComId: "13140156",
+    round: "Round 6 (Final)",
+    timeControl: "1+2",
+    playedAs: "white",
+    notes: "Player username: SuperMaanas",
+    collegeTeam: "uwaterloo-b",
+    playerName: "Maanas Kollegal"
+  },
+  // Maanas vs University of Texas at Austin - D
+  {
+    id: 33,
+    opponent: "ChessCraze012",
+    result: "draw",
+    date: "2025-03-01",
+    chessComId: "13144500",
+    round: "Round 1",
+    timeControl: "5+2",
+    playedAs: "black",
+    notes: "Player username: SuperMaanas",
+    collegeTeam: "texas-austin-d",
+    playerName: "Maanas Kollegal"
+  },
+  {
+    id: 34,
+    opponent: "DieRoten4002",
+    result: "win",
+    date: "2025-03-01",
+    chessComId: "13144502",
+    round: "Round 2",
+    timeControl: "5+2",
+    playedAs: "white",
+    notes: "Player username: SuperMaanas",
+    collegeTeam: "texas-austin-d",
+    playerName: "Maanas Kollegal"
+  },
+  {
+    id: 35,
+    opponent: "DrqgonRage",
+    result: "win",
+    date: "2025-03-01",
+    chessComId: "13144504",
+    round: "Round 3",
+    timeControl: "5+2",
+    playedAs: "white",
+    notes: "Player username: SuperMaanas",
+    collegeTeam: "texas-austin-d",
+    playerName: "Maanas Kollegal"
+  },
+  {
+    id: 36,
+    opponent: "KnifeEffSix",
+    result: "draw",
+    date: "2025-03-01",
+    chessComId: "13144506",
+    round: "Round 4",
+    timeControl: "5+2",
+    playedAs: "black",
+    notes: "Player username: SuperMaanas",
+    collegeTeam: "texas-austin-d",
+    playerName: "Maanas Kollegal"
+  },
+  // Falak vs University of Texas at Austin - D
+  {
+    id: 37,
+    opponent: "DrqgonRage",
+    result: "win",
+    date: "2025-03-01",
+    chessComId: "13144544",
+    round: "Round 1",
+    timeControl: "5+2",
+    playedAs: "white",
+    notes: "Player username: skizzers13",
+    collegeTeam: "texas-austin-d",
+    playerName: "Falak Tulsi"
+  },
+  {
+    id: 38,
+    opponent: "KnifeEffSix",
+    result: "loss",
+    date: "2025-03-01",
+    chessComId: "13144546",
+    round: "Round 2",
+    timeControl: "5+2",
+    playedAs: "black",
+    notes: "Player username: skizzers13",
+    collegeTeam: "texas-austin-d",
+    playerName: "Falak Tulsi"
+  },
+  {
+    id: 39,
+    opponent: "ChessCraze012",
+    result: "loss",
+    date: "2025-03-01",
+    chessComId: "13144552",
+    round: "Round 3",
+    timeControl: "5+2",
+    playedAs: "black",
+    notes: "Player username: skizzers13",
+    collegeTeam: "texas-austin-d",
+    playerName: "Falak Tulsi"
+  },
+  {
+    id: 40,
+    opponent: "DieRoten4002",
+    result: "loss",
+    date: "2025-03-01",
+    chessComId: "13144556",
+    round: "Round 4",
+    timeControl: "5+2",
+    playedAs: "white",
+    notes: "Player username: skizzers13",
+    collegeTeam: "texas-austin-d",
+    playerName: "Falak Tulsi"
+  }
+];
