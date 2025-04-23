@@ -763,6 +763,18 @@ export const allGames: Game[] = [
     playedAs: "black",
     collegeTeam: "washington-b",
     playerName: "Kunal Shrivastav"
+  },
+  {
+    id: 60,
+    opponent: "jkmckenzzz",
+    result: "win",
+    date: "2025-03-08",
+    chessComId: "13145620",
+    round: "Round 4",
+    timeControl: "5+2",
+    playedAs: "white",
+    collegeTeam: "washington-b",
+    playerName: "Kunal Shrivastav"
   }
 
 ];
