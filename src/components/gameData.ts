@@ -976,7 +976,7 @@ export const allGames: Game[] = [
 {
   id: 76,
   opponent: "LionBlade45",
-  result: "win",
+  result: "loss",
   date: "2025-03-08",
   chessComId: "13145740",
   round: "Round 1",
@@ -989,7 +989,7 @@ export const allGames: Game[] = [
 {
   id: 77,
   opponent: "jkmckenzzz",
-  result: "loss",
+  result: "draw",
   date: "2025-03-08",
   chessComId: "13145742",
   round: "Round 2",
@@ -1002,7 +1002,7 @@ export const allGames: Game[] = [
 {
   id: 78,
   opponent: "sdpandit",
-  result: "win",
+  result: "loss",
   date: "2025-03-08",
   chessComId: "13145744",
   round: "Round 3",
@@ -1015,7 +1015,7 @@ export const allGames: Game[] = [
 {
   id: 79,
   opponent: "SirPoetVic",
-  result: "win",
+  result: "loss",
   date: "2025-03-08",
   chessComId: "13145748",
   round: "Round 4",
@@ -1028,7 +1028,7 @@ export const allGames: Game[] = [
 {
   id: 80,
   opponent: "SirPoetVic",
-  result: "win",
+  result: "loss",
   date: "2025-03-08",
   chessComId: "13145752",
   round: "Round 5",
@@ -1054,7 +1054,7 @@ export const allGames: Game[] = [
 {
   id: 82,
   opponent: "SirPoetVic",
-  result: "win",
+  result: "loss",
   date: "2025-03-08",
   chessComId: "13145758",
   round: "Round 7",
@@ -1067,7 +1067,7 @@ export const allGames: Game[] = [
 {
   id: 83,
   opponent: "SirPoetVic",
-  result: "win",
+  result: "loss",
   date: "2025-03-08",
   chessComId: "13145776",
   round: "Round 8",
