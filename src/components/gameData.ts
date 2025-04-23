@@ -971,4 +971,6 @@ export const allGames: Game[] = [
     playerName: "Maanas Kollegal"
   },
 
+  //vedh vasu's games against Univ-Washington 03/08
+
 ];
