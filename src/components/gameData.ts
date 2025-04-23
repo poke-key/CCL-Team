@@ -775,6 +775,79 @@ export const allGames: Game[] = [
     playedAs: "white",
     collegeTeam: "washington-b",
     playerName: "Kunal Shrivastav"
-  }
+  }, 
+  {
+    id: 61,
+    opponent: "jkmckenzzz",
+    result: "win",
+    date: "2025-03-08",
+    chessComId: "13145638",
+    round: "Round 5",
+    timeControl: "3+2",
+    playedAs: "black",
+    collegeTeam: "washington-b",
+    playerName: "Kunal Shrivastav"
+  }, 
+  {
+    id: 62,
+    opponent: "jkmckenzzz",
+    result: "win",
+    date: "2025-03-08",
+    chessComId: "13145640",
+    round: "Round 6",
+    timeControl: "1+2",
+    playedAs: "white",
+    collegeTeam: "washington-b",
+    playerName: "Kunal Shrivastav"
+  }, 
+  {
+    id: 63,
+    opponent: "jkmckenzzz",
+    result: "win",
+    date: "2025-03-08",
+    chessComId: "13145644",
+    round: "Round 7",
+    timeControl: "1+2",
+    playedAs: "black",
+    collegeTeam: "washington-b",
+    playerName: "Kunal Shrivastav"
+  }, 
+  {
+    id: 64,
+    opponent: "jkmckenzzz",
+    result: "win",
+    date: "2025-03-08",
+    chessComId: "13145650",
+    round: "Round 8",
+    timeControl: "1+2",
+    playedAs: "white",
+    collegeTeam: "washington-b",
+    playerName: "Kunal Shrivastav"
+  }, 
+  {
+    id: 65,
+    opponent: "jkmckenzzz",
+    result: "win",
+    date: "2025-03-08",
+    chessComId: "13145652",
+    round: "Round 9",
+    timeControl: "1+2",
+    playedAs: "black",
+    collegeTeam: "washington-b",
+    playerName: "Kunal Shrivastav"
+  }, 
+  {
+    id: 65,
+    opponent: "jkmckenzzz",
+    result: "win",
+    date: "2025-03-08",
+    chessComId: "13145654",
+    round: "Round 10",
+    timeControl: "1+2",
+    playedAs: "white",
+    collegeTeam: "washington-b",
+    playerName: "Kunal Shrivastav"
+  }, 
+
 
 ];
