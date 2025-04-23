@@ -1101,6 +1101,21 @@ export const allGames: Game[] = [
   notes: "Player username: coolguy3949",
   collegeTeam: "washington-b",
   playerName: "Vedh Vasu"
+},
+
+//Falak Tulsi's games against Univ-Washington 03/08
+{
+  id: 86,
+  opponent: "SirPoetVic",
+  result: "win",
+  date: "2025-03-08",
+  chessComId: "13145784",
+  round: "Round 10",
+  timeControl: "1+2",
+  playedAs: "black",
+  notes: "Player username: coolguy3949",
+  collegeTeam: "washington-b",
+  playerName: "Falak Tulsi"
 }
 
 ];
