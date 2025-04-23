@@ -635,5 +635,44 @@ export const allGames: Game[] = [
     notes: "Player username: coolguy3949",
     collegeTeam: "unizambezea-a",
     playerName: "Vedh Vasu"
+  },
+  {
+    id: 50,
+    opponent: "jojoabdul",
+    result: "loss",
+    date: "2025-02-08",
+    chessComId: "13144792",
+    round: "Round 2",
+    timeControl: "5+2",
+    playedAs: "black",
+    notes: "Player username: coolguy3949",
+    collegeTeam: "unizambezea-a",
+    playerName: "Vedh Vasu"
+  },
+  {
+    id: 51,
+    opponent: "Elio_3",
+    result: "loss",
+    date: "2025-02-08",
+    chessComId: "13144802",
+    round: "Round 3",
+    timeControl: "5+2",
+    playedAs: "white",
+    notes: "Player username: coolguy3949",
+    collegeTeam: "unizambezea-a",
+    playerName: "Vedh Vasu"
+  },
+  {
+    id: 52,
+    opponent: "Chissale19QI",
+    result: "draw",
+    date: "2025-02-08",
+    chessComId: "13144814",
+    round: "Round 3",
+    timeControl: "5+2",
+    playedAs: "black",
+    notes: "Player username: coolguy3949",
+    collegeTeam: "unizambezea-a",
+    playerName: "Vedh Vasu"
   }
 ];
