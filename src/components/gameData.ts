@@ -294,7 +294,7 @@ export const allGames: Game[] = [
   {
     id: 23,
     opponent: "N/A",
-    result: "draw",
+    result: "loss",
     date: "2025-04-05",
     round: "Round 3",
     timeControl: "N/A",
@@ -305,7 +305,7 @@ export const allGames: Game[] = [
   {
     id: 24,
     opponent: "N/A",
-    result: "draw",
+    result: "loss",
     date: "2025-04-05",
     round: "Round 4",
     timeControl: "N/A",
@@ -316,7 +316,7 @@ export const allGames: Game[] = [
   {
     id: 25,
     opponent: "N/A",
-    result: "draw",
+    result: "loss",
     date: "2025-04-05",
     round: "Round 5",
     timeControl: "N/A",
@@ -327,7 +327,7 @@ export const allGames: Game[] = [
   {
     id: 26,
     opponent: "N/A",
-    result: "draw",
+    result: "loss",
     date: "2025-04-05",
     round: "Round 6",
     timeControl: "N/A",
