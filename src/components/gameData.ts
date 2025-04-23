@@ -687,5 +687,44 @@ export const allGames: Game[] = [
     notes: "Player username: skizzers13",
     collegeTeam: "unizambezea-a",
     playerName: "Falak Tulsi"
-  }
+  },
+  {
+    id: 54,
+    opponent: "agm2002",
+    result: "win",
+    date: "2025-02-08",
+    chessComId: "13144876",
+    round: "Round 2",
+    timeControl: "5+2",
+    playedAs: "white",
+    notes: "Player username: skizzers13",
+    collegeTeam: "unizambezea-a",
+    playerName: "Falak Tulsi"
+  },
+  {
+    id: 55,
+    opponent: "Chissale19QI",
+    result: "loss",
+    date: "2025-02-08",
+    chessComId: "13144888",
+    round: "Round 3",
+    timeControl: "5+2",
+    playedAs: "black",
+    notes: "Player username: skizzers13",
+    collegeTeam: "unizambezea-a",
+    playerName: "Falak Tulsi"
+  },
+  {
+    id: 56,
+    opponent: "Elio_3",
+    result: "loss",
+    date: "2025-02-08",
+    chessComId: "13144876",
+    round: "Round 4",
+    timeControl: "5+2",
+    playedAs: "white",
+    notes: "Player username: skizzers13",
+    collegeTeam: "unizambezea-a",
+    playerName: "Falak Tulsi"
+  },
 ];
