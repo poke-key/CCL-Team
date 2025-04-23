@@ -727,5 +727,30 @@ export const allGames: Game[] = [
     collegeTeam: "unizambezea-a",
     playerName: "Falak Tulsi"
   },
-  //kunal games against univ-washington 03/09/
+  //kunal games against univ-washington 03/08/
+  {
+    id: 57,
+    opponent: "sdpandit",
+    result: "win",
+    date: "2025-03-08",
+    chessComId: "13145594",
+    round: "Round 1",
+    timeControl: "5+2",
+    playedAs: "black",
+    collegeTeam: "washington-b",
+    playerName: "Kunal Shrivastav"
+  },
+  {
+    id: 58,
+    opponent: "sdpandit",
+    result: "win",
+    date: "2025-03-08",
+    chessComId: "13145604",
+    round: "Round 2",
+    timeControl: "5+2",
+    playedAs: "white",
+    collegeTeam: "washington-b",
+    playerName: "Kunal Shrivastav"
+  },
+
 ];
