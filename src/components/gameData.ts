@@ -850,6 +850,125 @@ export const allGames: Game[] = [
   }, 
 
   //maanas games against Univ. Washington
-
+  {
+    id: 66,
+    opponent: "sdpandit",
+    result: "win",
+    date: "2025-03-08",
+    chessComId: "13145594",
+    round: "Round 1",
+    timeControl: "5+2",
+    playedAs: "black",
+    collegeTeam: "washington-b",
+    playerName: "Maanas Kollegal"
+  },
+  {
+    id: 67,
+    opponent: "SirPoetVic",
+    result: "win",
+    date: "2025-03-08",
+    chessComId: "13145604",
+    round: "Round 2",
+    timeControl: "5+2",
+    playedAs: "white",
+    collegeTeam: "washington-b",
+    playerName: "Maanas Kollegal"
+  },
+  {
+    id: 68,
+    opponent: "LionBlade45",
+    result: "win",
+    date: "2025-03-08",
+    chessComId: "13145610",
+    round: "Round 3",
+    timeControl: "5+2",
+    playedAs: "black",
+    collegeTeam: "washington-b",
+    playerName: "Maanas Kollegal"
+  },
+  {
+    id: 69,
+    opponent: "jkmckenzzz",
+    result: "win",
+    date: "2025-03-08",
+    chessComId: "13145620",
+    round: "Round 4",
+    timeControl: "5+2",
+    playedAs: "white",
+    collegeTeam: "washington-b",
+    playerName: "Maanas Kollegal"
+  }, 
+  {
+    id: 70,
+    opponent: "jkmckenzzz",
+    result: "win",
+    date: "2025-03-08",
+    chessComId: "13145638",
+    round: "Round 5",
+    timeControl: "3+2",
+    playedAs: "black",
+    collegeTeam: "washington-b",
+    playerName: "Maanas Kollegal"
+  }, 
+  {
+    id: 71,
+    opponent: "jkmckenzzz",
+    result: "win",
+    date: "2025-03-08",
+    chessComId: "13145640",
+    round: "Round 6",
+    timeControl: "1+2",
+    playedAs: "white",
+    collegeTeam: "washington-b",
+    playerName: "Maanas Kollegal"
+  }, 
+  {
+    id: 72,
+    opponent: "jkmckenzzz",
+    result: "win",
+    date: "2025-03-08",
+    chessComId: "13145644",
+    round: "Round 7",
+    timeControl: "1+2",
+    playedAs: "black",
+    collegeTeam: "washington-b",
+    playerName: "Maanas Kollegal"
+  }, 
+  {
+    id: 73,
+    opponent: "jkmckenzzz",
+    result: "win",
+    date: "2025-03-08",
+    chessComId: "13145650",
+    round: "Round 8",
+    timeControl: "1+2",
+    playedAs: "white",
+    collegeTeam: "washington-b",
+    playerName: "Maanas Kollegal"
+  }, 
+  {
+    id: 74,
+    opponent: "jkmckenzzz",
+    result: "win",
+    date: "2025-03-08",
+    chessComId: "13145652",
+    round: "Round 9",
+    timeControl: "1+2",
+    playedAs: "black",
+    collegeTeam: "washington-b",
+    playerName: "Maanas Kollegal"
+  }, 
+  {
+    id: 75,
+    opponent: "jkmckenzzz",
+    result: "win",
+    date: "2025-03-08",
+    chessComId: "13145654",
+    round: "Round 10",
+    timeControl: "1+2",
+    playedAs: "white",
+    collegeTeam: "washington-b",
+    playerName: "Maanas Kollegal"
+  },
 
 ];
