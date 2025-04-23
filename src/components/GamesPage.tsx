@@ -487,6 +487,59 @@ const GamesPage: React.FC = () => {
       notes: "Player username: SuperMaanas",
       collegeTeam: "texas-austin-d",
       playerName: "Maanas Kollegal"
+    },
+    // Falak vs University of Texas at Austin - D
+    {
+      id: 37,
+      opponent: "DrqgonRage",
+      result: "win",
+      date: "2025-03-01",
+      chessComId: "13144544",
+      round: "Round 1",
+      timeControl: "5+2",
+      playedAs: "white",
+      notes: "Player username: skizzers13",
+      collegeTeam: "texas-austin-d",
+      playerName: "Falak Tulsi"
+    },
+    {
+      id: 38,
+      opponent: "KnifeEffSix",
+      result: "loss",
+      date: "2025-03-01",
+      chessComId: "13144546",
+      round: "Round 2",
+      timeControl: "5+2",
+      playedAs: "black",
+      notes: "Player username: skizzers13",
+      collegeTeam: "texas-austin-d",
+      playerName: "Falak Tulsi"
+    },
+    {
+      id: 39,
+      opponent: "ChessCraze012",
+      result: "loss",
+      date: "2025-03-01",
+      chessComId: "13144552",
+      round: "Round 3",
+      timeControl: "5+2",
+      playedAs: "black",
+      notes: "Player username: skizzers13",
+      collegeTeam: "texas-austin-d",
+      playerName: "Falak Tulsi"
+    },
+    {
+      id: 40,
+      opponent: "DieRoten4002",
+      result: "loss",
+      date: "2025-03-01",
+      chessComId: "13144556",
+      round: "Round 4",
+      timeControl: "5+2",
+      playedAs: "white",
+      notes: "Player username: skizzers13",
+      collegeTeam: "texas-austin-d",
+      playerName: "Falak Tulsi"
     }
   ];
 
