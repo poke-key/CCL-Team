@@ -849,5 +849,7 @@ export const allGames: Game[] = [
     playerName: "Kunal Shrivastav"
   }, 
 
+  //maanas games against Univ. Washington
+
 
 ];
