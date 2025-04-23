@@ -569,5 +569,58 @@ export const allGames: Game[] = [
     playedAs: "white",
     collegeTeam: "unizambezea-a",
     playerName: "Kunal Shrivastav"
+  },
+  // Maanas vs UNIZAMBEZEA A
+  {
+    id: 45,
+    opponent: "Chissale19QI",
+    result: "win",
+    date: "2025-02-08",
+    chessComId: "13144760",
+    round: "Round 1",
+    timeControl: "5+2",
+    playedAs: "black",
+    notes: "Player username: SuperMaanas",
+    collegeTeam: "unizambezea-a",
+    playerName: "Maanas Kollegal"
+  },
+  {
+    id: 46,
+    opponent: "Elio_3",
+    result: "win",
+    date: "2025-02-08",
+    chessComId: "13144764",
+    round: "Round 2",
+    timeControl: "5+2",
+    playedAs: "white",
+    notes: "Player username: SuperMaanas",
+    collegeTeam: "unizambezea-a",
+    playerName: "Maanas Kollegal"
+  },
+  {
+    id: 47,
+    opponent: "jojoabdul",
+    result: "loss",
+    date: "2025-02-08",
+    chessComId: "13144766",
+    round: "Round 3",
+    timeControl: "5+2",
+    playedAs: "black",
+    notes: "Player username: SuperMaanas",
+    collegeTeam: "unizambezea-a",
+    playerName: "Maanas Kollegal"
+  },
+  {
+    id: 48,
+    opponent: "agm2002",
+    result: "loss",
+    date: "2025-02-08",
+    chessComId: "13144768",
+    round: "Round 4",
+    timeControl: "5+2",
+    playedAs: "black",
+    notes: "Player username: SuperMaanas",
+    collegeTeam: "unizambezea-a",
+    playerName: "Maanas Kollegal"
   }
 ];
