@@ -972,7 +972,6 @@ export const allGames: Game[] = [
   },
 
   //vedh vasu's games against Univ-Washington 03/08
-  // Vedh games against Univ. Washington
 {
   id: 76,
   opponent: "LionBlade45",
