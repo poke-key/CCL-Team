@@ -27,30 +27,35 @@ const MatchSummary: React.FC<MatchSummaryProps> = ({
         <div className="col-span-3">
           <div className="grid grid-cols-3 gap-4 text-center">
             <div className="p-3 bg-green-100 rounded">
+              <p className="text-sm text-green-700">Wins</p>
               <p className="text-lg font-bold text-green-800">
                 {matchResults.wins}
               </p>
-              <p className="text-sm text-green-700">Wins</p>
+              {/* <p className="text-sm text-green-700">Wins</p> */}
             </div>
             <div className="p-3 bg-red-100 rounded">
+              <p className="text-sm text-red-700">Losses</p>
               <p className="text-lg font-bold text-red-800">
                 {matchResults.losses}
               </p>
-              <p className="text-sm text-red-700">Losses</p>
+              {/* <p className="text-sm text-red-700">Losses</p> */}
             </div>
             <div className="p-3 bg-yellow-100 rounded">
+              <p className="text-sm text-yellow-700">Draws</p>
               <p className="text-lg font-bold text-yellow-800">
                 {matchResults.draws}
               </p>
-              <p className="text-sm text-yellow-700">Draws</p>
+              {/* <p className="text-sm text-yellow-700">Draws</p> */}
             </div>
           </div>
         </div>
         <div className="p-3 bg-blue-100 rounded text-center">
-          <p className="text-lg font-bold text-blue-800">
+          <p className="text-sm text-blue-700">Match Score</p>
+          <p className="text-lg font-bold text-blue-800"> {score}</p>
+          {/* <p className="text-lg font-bold text-blue-800">
             {score}
           </p>
-          <p className="text-sm text-blue-700">Match Score</p>
+          <p className="text-sm text-blue-700">Match Score</p> */}
         </div>
       </div>
       
