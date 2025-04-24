@@ -1432,5 +1432,18 @@ export const allGames: Game[] = [
   collegeTeam: "vit-i",
   playerName: "Vedh Vasu"
 },
+{
+  id: 110,
+  opponent: "utkarsh0509",
+  result: "win",
+  date: "2025-03-22",
+  chessComId: "13152110",
+  round: "Round 4",
+  timeControl: "5+2",
+  playedAs: "white",
+  notes: "Player username: coolguy3949",
+  collegeTeam: "vit-i",
+  playerName: "Vedh Vasu"
+},
 
 ];
