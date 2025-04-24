@@ -1589,4 +1589,56 @@ export const allGames: Game[] = [
   collegeTeam: "univ-wash_playoff",
   playerName: "Kunal Shrivastav"
 }, 
+{
+  id: 122,
+  opponent: "kingofdapark",
+  result: "win",
+  date: "2025-03-29",
+  chessComId: "13156236",
+  round: "Round 2",
+  timeControl: "5+2",
+  playedAs: "white",
+  notes: "Player username: king_kunal",
+  collegeTeam: "univ-wash_playoff",
+  playerName: "Kunal Shrivastav"
+}, 
+{
+  id: 123,
+  opponent: "SirPoetVic",
+  result: "win",
+  date: "2025-03-29",
+  chessComId: "13156244",
+  round: "Round 3",
+  timeControl: "5+2",
+  playedAs: "white",
+  notes: "Player username: king_kunal",
+  collegeTeam: "univ-wash_playoff",
+  playerName: "Kunal Shrivastav"
+}, 
+{
+  id: 124,
+  opponent: "raigisan001",
+  result: "win",
+  date: "2025-03-29",
+  chessComId: "13156254",
+  round: "Round 4",
+  timeControl: "5+2",
+  playedAs: "black",
+  notes: "Player username: king_kunal",
+  collegeTeam: "univ-wash_playoff",
+  playerName: "Kunal Shrivastav"
+}, 
+{
+  id: 125,
+  opponent: "raigisan001",
+  result: "win",
+  date: "2025-03-29",
+  chessComId: "13156264",
+  round: "Round 5",
+  timeControl: "3+2",
+  playedAs: "white",
+  notes: "Player username: king_kunal",
+  collegeTeam: "univ-wash_playoff",
+  playerName: "Kunal Shrivastav"
+}, 
 ];
