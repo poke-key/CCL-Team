@@ -1396,12 +1396,12 @@ export const allGames: Game[] = [
 {
   id: 107,
   opponent: "yashg_588",
-  result: "win",
+  result: "loss",
   date: "2025-03-22",
-  chessComId: "13152094",
-  round: "Round 6",
-  timeControl: "1+2",
-  playedAs: "black",
+  chessComId: "13152096",
+  round: "Round 1",
+  timeControl: "5+2",
+  playedAs: "white",
   notes: "Player username: coolguy3949",
   collegeTeam: "vit-i",
   playerName: "Vedh Vasu"
