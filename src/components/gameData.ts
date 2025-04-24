@@ -859,7 +859,7 @@ export const allGames: Game[] = [
     playerName: "Kunal Shrivastav"
   }, 
   {
-    id: 65,
+    id: 66,
     opponent: "jkmckenzzz",
     result: "win",
     date: "2025-03-08",
@@ -874,7 +874,7 @@ export const allGames: Game[] = [
 
   //maanas games against Univ. Washington
   {
-    id: 66,
+    id: 67,
     opponent: "SirPoetVic",
     result: "draw",
     date: "2025-03-08",
@@ -886,7 +886,7 @@ export const allGames: Game[] = [
     playerName: "Maanas Kollegal"
   },
   {
-    id: 67,
+    id: 68,
     opponent: "sdpandit",
     result: "win",
     date: "2025-03-08",
@@ -898,7 +898,7 @@ export const allGames: Game[] = [
     playerName: "Maanas Kollegal"
   },
   {
-    id: 68,
+    id: 69,
     opponent: "jkmckenzzz",
     result: "win",
     date: "2025-03-08",
@@ -910,7 +910,7 @@ export const allGames: Game[] = [
     playerName: "Maanas Kollegal"
   },
   {
-    id: 69,
+    id: 70,
     opponent: "LionBlade45",
     result: "win",
     date: "2025-03-08",
@@ -922,7 +922,7 @@ export const allGames: Game[] = [
     playerName: "Maanas Kollegal"
   }, 
   {
-    id: 70,
+    id: 71,
     opponent: "LionBlade45",
     result: "win",
     date: "2025-03-08",
@@ -934,7 +934,7 @@ export const allGames: Game[] = [
     playerName: "Maanas Kollegal"
   }, 
   {
-    id: 71,
+    id: 72,
     opponent: "LionBlade45",
     result: "win",
     date: "2025-03-08",
@@ -946,7 +946,7 @@ export const allGames: Game[] = [
     playerName: "Maanas Kollegal"
   }, 
   {
-    id: 72,
+    id: 73,
     opponent: "LionBlade45",
     result: "win",
     date: "2025-03-08",
@@ -958,7 +958,7 @@ export const allGames: Game[] = [
     playerName: "Maanas Kollegal"
   }, 
   {
-    id: 73,
+    id: 74,
     opponent: "LionBlade45",
     result: "win",
     date: "2025-03-08",
@@ -970,7 +970,7 @@ export const allGames: Game[] = [
     playerName: "Maanas Kollegal"
   }, 
   {
-    id: 74,
+    id: 75,
     opponent: "LionBlade45",
     result: "loss",
     date: "2025-03-08",
@@ -982,7 +982,7 @@ export const allGames: Game[] = [
     playerName: "Maanas Kollegal"
   }, 
   {
-    id: 75,
+    id: 76,
     opponent: "LionBlade45",
     result: "win",
     date: "2025-03-08",
@@ -996,7 +996,7 @@ export const allGames: Game[] = [
 
   //vedh vasu's games against Univ-Washington 03/08
 {
-  id: 76,
+  id: 77,
   opponent: "LionBlade45",
   result: "loss",
   date: "2025-03-08",
@@ -1009,7 +1009,7 @@ export const allGames: Game[] = [
   playerName: "Vedh Vasu"
 },
 {
-  id: 77,
+  id: 78,
   opponent: "jkmckenzzz",
   result: "draw",
   date: "2025-03-08",
@@ -1022,7 +1022,7 @@ export const allGames: Game[] = [
   playerName: "Vedh Vasu"
 },
 {
-  id: 78,
+  id: 79,
   opponent: "sdpandit",
   result: "loss",
   date: "2025-03-08",
@@ -1035,7 +1035,7 @@ export const allGames: Game[] = [
   playerName: "Vedh Vasu"
 },
 {
-  id: 79,
+  id: 80,
   opponent: "SirPoetVic",
   result: "loss",
   date: "2025-03-08",
@@ -1048,7 +1048,7 @@ export const allGames: Game[] = [
   playerName: "Vedh Vasu"
 },
 {
-  id: 80,
+  id: 81,
   opponent: "SirPoetVic",
   result: "loss",
   date: "2025-03-08",
@@ -1061,7 +1061,7 @@ export const allGames: Game[] = [
   playerName: "Vedh Vasu"
 },
 {
-  id: 81,
+  id: 82,
   opponent: "SirPoetVic",
   result: "loss",
   date: "2025-03-08",
@@ -1074,7 +1074,7 @@ export const allGames: Game[] = [
   playerName: "Vedh Vasu"
 },
 {
-  id: 82,
+  id: 83,
   opponent: "SirPoetVic",
   result: "loss",
   date: "2025-03-08",
@@ -1087,7 +1087,7 @@ export const allGames: Game[] = [
   playerName: "Vedh Vasu"
 },
 {
-  id: 83,
+  id: 84,
   opponent: "SirPoetVic",
   result: "loss",
   date: "2025-03-08",
@@ -1100,7 +1100,7 @@ export const allGames: Game[] = [
   playerName: "Vedh Vasu"
 },
 {
-  id: 84,
+  id: 85,
   opponent: "SirPoetVic",
   result: "win",
   date: "2025-03-08",
@@ -1113,7 +1113,7 @@ export const allGames: Game[] = [
   playerName: "Vedh Vasu"
 },
 {
-  id: 85,
+  id: 86,
   opponent: "SirPoetVic",
   result: "win",
   date: "2025-03-08",
@@ -1128,7 +1128,7 @@ export const allGames: Game[] = [
 
 //Falak Tulsi's games against Univ-Washington 03/08
 {
-  id: 86,
+  id: 87,
   opponent: "jkmckenzzz",
   result: "loss",
   date: "2025-03-08",
@@ -1141,7 +1141,7 @@ export const allGames: Game[] = [
   playerName: "Falak Tulsi"
 },
 {
-  id: 87,
+  id: 88,
   opponent: "LionBlade45",
   result: "loss",
   date: "2025-03-08",
@@ -1154,7 +1154,7 @@ export const allGames: Game[] = [
   playerName: "Falak Tulsi"
 },
 {
-  id: 88,
+  id: 89,
   opponent: "SirPoetVic",
   result: "loss",
   date: "2025-03-08",
@@ -1167,7 +1167,7 @@ export const allGames: Game[] = [
   playerName: "Falak Tulsi"
 },
 {
-  id: 89,
+  id: 90,
   opponent: "sdpandit",
   result: "loss",
   date: "2025-03-08",
@@ -1180,7 +1180,7 @@ export const allGames: Game[] = [
   playerName: "Falak Tulsi"
 },
 {
-  id: 90,
+  id: 91,
   opponent: "sdpandit",
   result: "loss",
   date: "2025-03-08",
@@ -1193,7 +1193,7 @@ export const allGames: Game[] = [
   playerName: "Falak Tulsi"
 },
 {
-  id: 91,
+  id: 92,
   opponent: "sdpandit",
   result: "loss",
   date: "2025-03-08",
@@ -1206,7 +1206,7 @@ export const allGames: Game[] = [
   playerName: "Falak Tulsi"
 },
 {
-  id: 92,
+  id: 93,
   opponent: "sdpandit",
   result: "loss",
   date: "2025-03-08",
@@ -1219,7 +1219,7 @@ export const allGames: Game[] = [
   playerName: "Falak Tulsi"
 },
 {
-  id: 93,
+  id: 94,
   opponent: "sdpandit",
   result: "loss",
   date: "2025-03-08",
@@ -1232,7 +1232,7 @@ export const allGames: Game[] = [
   playerName: "Falak Tulsi"
 },
 {
-  id: 94,
+  id: 95,
   opponent: "sdpandit",
   result: "loss",
   date: "2025-03-08",
@@ -1245,7 +1245,7 @@ export const allGames: Game[] = [
   playerName: "Falak Tulsi"
 },
 {
-  id: 95,
+  id: 96,
   opponent: "sdpandit",
   result: "loss",
   date: "2025-03-08",
@@ -1259,7 +1259,7 @@ export const allGames: Game[] = [
 }, 
 //kunal games 03/22
 {
-  id: 96,
+  id: 97,
   opponent: "Insaan0201",
   result: "win",
   date: "2025-03-22",
@@ -1272,7 +1272,7 @@ export const allGames: Game[] = [
   playerName: "Kunal Shrivastav"
 },
 {
-  id: 97,
+  id: 98,
   opponent: "utkarsh0509",
   result: "win",
   date: "2025-03-22",
@@ -1285,7 +1285,7 @@ export const allGames: Game[] = [
   playerName: "Kunal Shrivastav"
 },
 {
-  id: 98,
+  id: 99,
   opponent: "yashg_588",
   result: "win",
   date: "2025-03-22",
@@ -1298,7 +1298,7 @@ export const allGames: Game[] = [
   playerName: "Kunal Shrivastav"
 },
 {
-  id: 99,
+  id: 100,
   opponent: "darkknight1231",
   result: "loss",
   date: "2025-03-22",
@@ -1311,7 +1311,7 @@ export const allGames: Game[] = [
   playerName: "Kunal Shrivastav"
 },
 {
-  id: 100,
+  id: 101,
   opponent: "darkknight1231",
   result: "win",
   date: "2025-03-22",
@@ -1324,7 +1324,7 @@ export const allGames: Game[] = [
   playerName: "Kunal Shrivastav"
 },
 {
-  id: 101,
+  id: 102,
   opponent: "darkknight1231",
   result: "win",
   date: "2025-03-22",
@@ -1338,7 +1338,7 @@ export const allGames: Game[] = [
 },
 //subermaanium chaacha 03/22
 {
-  id: 102,
+  id: 103,
   opponent: "utkarsh0509",
   result: "win",
   date: "2025-03-22",
@@ -1351,7 +1351,7 @@ export const allGames: Game[] = [
   playerName: "Maanas Kollegal"
 },
 {
-  id: 103,
+  id: 104,
   opponent: "Insaan0201",
   result: "loss",
   date: "2025-03-22",
@@ -1364,7 +1364,7 @@ export const allGames: Game[] = [
   playerName: "Maanas Kollegal"
 },
 {
-  id: 104,
+  id: 105,
   opponent: "darkknight1231",
   result: "loss",
   date: "2025-03-22",
@@ -1377,7 +1377,7 @@ export const allGames: Game[] = [
   playerName: "Maanas Kollegal"
 },
 {
-  id: 105,
+  id: 106,
   opponent: "yashg_588",
   result: "win",
   date: "2025-03-22",
@@ -1390,7 +1390,7 @@ export const allGames: Game[] = [
   playerName: "Maanas Kollegal"
 },
 {
-  id: 106,
+  id: 107,
   opponent: "yashg_588",
   result: "win",
   date: "2025-03-22",
@@ -1403,7 +1403,7 @@ export const allGames: Game[] = [
   playerName: "Maanas Kollegal"
 },
 {
-  id: 107,
+  id: 108,
   opponent: "yashg_588",
   result: "win",
   date: "2025-03-22",
@@ -1417,7 +1417,7 @@ export const allGames: Game[] = [
 },
 //vedh vasu games 03/22
 {
-  id: 107,
+  id: 109,
   opponent: "yashg_588",
   result: "loss",
   date: "2025-03-22",
@@ -1430,7 +1430,7 @@ export const allGames: Game[] = [
   playerName: "Vedh Vasu"
 },
 {
-  id: 108,
+  id: 110,
   opponent: "darkknight1231",
   result: "loss",
   date: "2025-03-22",
@@ -1443,7 +1443,7 @@ export const allGames: Game[] = [
   playerName: "Vedh Vasu"
 },
 {
-  id: 109,
+  id: 111,
   opponent: "Insaan0201",
   result: "loss",
   date: "2025-03-22",
@@ -1456,7 +1456,7 @@ export const allGames: Game[] = [
   playerName: "Vedh Vasu"
 },
 {
-  id: 110,
+  id: 112,
   opponent: "utkarsh0509",
   result: "win",
   date: "2025-03-22",
@@ -1469,7 +1469,7 @@ export const allGames: Game[] = [
   playerName: "Vedh Vasu"
 },
 {
-  id: 111,
+  id: 113,
   opponent: "utkarsh0509",
   result: "loss",
   date: "2025-03-22",
@@ -1482,7 +1482,7 @@ export const allGames: Game[] = [
   playerName: "Vedh Vasu"
 },
 {
-  id: 112,
+  id: 114,
   opponent: "utkarsh0509",
   result: "win",
   date: "2025-03-22",
@@ -1497,7 +1497,7 @@ export const allGames: Game[] = [
 
 //falak tulsi's games 03/22
 {
-  id: 113,
+  id: 115,
   opponent: "darkknight1231",
   result: "loss",
   date: "2025-03-22",
@@ -1510,7 +1510,7 @@ export const allGames: Game[] = [
   playerName: "Falak Tulsi"
 },
 {
-  id: 114,
+  id: 116,
   opponent: "yashg_588",
   result: "loss",
   date: "2025-03-22",
@@ -1523,7 +1523,7 @@ export const allGames: Game[] = [
   playerName: "Falak Tulsi"
 },
 {
-  id: 115,
+  id: 117,
   opponent: "yashg_588",
   result: "win",
   date: "2025-03-22",
@@ -1536,7 +1536,7 @@ export const allGames: Game[] = [
   playerName: "Falak Tulsi"
 },
 {
-  id: 116,
+  id: 118,
   opponent: "Insaan0201",
   result: "win",
   date: "2025-03-22",
@@ -1549,7 +1549,7 @@ export const allGames: Game[] = [
   playerName: "Falak Tulsi"
 },
 {
-  id: 117,
+  id: 119,
   opponent: "Insaan0201",
   result: "loss",
   date: "2025-03-22",
@@ -1562,7 +1562,7 @@ export const allGames: Game[] = [
   playerName: "Falak Tulsi"
 },
 {
-  id: 118,
+  id: 120,
   opponent: "Insaan0201",
   result: "loss",
   date: "2025-03-22",
