@@ -1348,7 +1348,7 @@ export const allGames: Game[] = [
   chessComId: "13152084",
   round: "Round 3",
   timeControl: "5+2",
-  playedAs: "black",
+  playedAs: "white",
   notes: "Player username: SuperMaanas",
   collegeTeam: "vit-i",
   playerName: "Maanas Kollegal"
