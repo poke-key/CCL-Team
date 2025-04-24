@@ -1550,5 +1550,5 @@ export const allGames: Game[] = [
   notes: "Player username: skizzers13",
   collegeTeam: "vit-i",
   playerName: "Falak Tulsi"
-},
+}, 
 ];
