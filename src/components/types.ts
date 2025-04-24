@@ -3,7 +3,7 @@ export interface Game {
     opponent: string;
     result: 'win' | 'loss' | 'draw';
     date: string;
-    chessComId?: string; // Chess.com embed ID
+    chessComId?: string; //chess.com embed ID
     round?: string;
     timeControl?: string;
     playedAs?: 'white' | 'black';
