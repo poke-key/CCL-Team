@@ -1355,7 +1355,7 @@ export const allGames: Game[] = [
 },
 {
   id: 105,
-  opponent: "utkarsh0509",
+  opponent: "yashg_588",
   result: "win",
   date: "2025-03-22",
   chessComId: "13152060",
@@ -1368,7 +1368,7 @@ export const allGames: Game[] = [
 },
 {
   id: 106,
-  opponent: "utkarsh0509",
+  opponent: "yashg_588",
   result: "win",
   date: "2025-03-22",
   chessComId: "13152060",
@@ -1380,8 +1380,8 @@ export const allGames: Game[] = [
   playerName: "Maanas Kollegal"
 },
 {
-  id: 102,
-  opponent: "utkarsh0509",
+  id: 107,
+  opponent: "yashg_588",
   result: "win",
   date: "2025-03-22",
   chessComId: "13152060",
