@@ -8,6 +8,7 @@ export const collegeTeams: CollegeTeam[] = [
   { name: "VIT I 2025 (INT CCL)", id: "vit-i" },
   { name: "University of Texas at Austin - D", id: "texas-austin-d" },
   { name: "UNIZAMBEZEA A", id: "unizambezea-a" },
+  {name: "University of Washington-B(Playoff)", id: "univ-wash_playoff" }
 ];
 
 // All games data
