@@ -1328,24 +1328,24 @@ export const allGames: Game[] = [
   playerName: "Maanas Kollegal"
 },
 {
-  id: 102,
-  opponent: "utkarsh0509",
-  result: "win",
+  id: 103,
+  opponent: "Insaan0201",
+  result: "loss",
   date: "2025-03-22",
-  chessComId: "13152060",
+  chessComId: "13152078",
   round: "Round 2",
   timeControl: "5+2",
-  playedAs: "black",
+  playedAs: "white",
   notes: "Player username: SuperMaanas",
   collegeTeam: "vit-i",
   playerName: "Maanas Kollegal"
 },
 {
-  id: 102,
-  opponent: "utkarsh0509",
-  result: "win",
+  id: 104,
+  opponent: "darkknight1231",
+  result: "loss",
   date: "2025-03-22",
-  chessComId: "13152060",
+  chessComId: "13152084",
   round: "Round 3",
   timeControl: "5+2",
   playedAs: "black",
@@ -1354,7 +1354,7 @@ export const allGames: Game[] = [
   playerName: "Maanas Kollegal"
 },
 {
-  id: 102,
+  id: 105,
   opponent: "utkarsh0509",
   result: "win",
   date: "2025-03-22",
@@ -1367,7 +1367,7 @@ export const allGames: Game[] = [
   playerName: "Maanas Kollegal"
 },
 {
-  id: 102,
+  id: 106,
   opponent: "utkarsh0509",
   result: "win",
   date: "2025-03-22",
