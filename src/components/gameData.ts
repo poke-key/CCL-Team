@@ -1472,4 +1472,19 @@ export const allGames: Game[] = [
   playerName: "Vedh Vasu"
 },
 
+//falak tulsi's games 03/22
+{
+  id: 113,
+  opponent: "darkknight1231",
+  result: "loss",
+  date: "2025-03-22",
+  chessComId: "13152132",
+  round: "Round 1",
+  timeControl: "5+2",
+  playedAs: "white",
+  notes: "Player username: skizzers13",
+  collegeTeam: "vit-i",
+  playerName: "Falak Tulsi"
+},
+
 ];
