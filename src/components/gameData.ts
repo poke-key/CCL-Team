@@ -1575,4 +1575,18 @@ export const allGames: Game[] = [
   collegeTeam: "vit-i",
   playerName: "Falak Tulsi"
 }, 
+//kunal playoffs 03/29
+{
+  id: 121,
+  opponent: "jkmckenzzz",
+  result: "win",
+  date: "2025-03-29",
+  chessComId: "13156230",
+  round: "Round 1",
+  timeControl: "5+2",
+  playedAs: "black",
+  notes: "Player username: king_kunal",
+  collegeTeam: "univ-wash_playoff",
+  playerName: "Kunal Shrivastav"
+}, 
 ];
