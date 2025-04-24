@@ -1,5 +1,5 @@
 // utils.ts
-import { Game, PlayerPerformance, MatchResults } from './types';
+import { Game, PlayerPerformance, MatchResults, MatchDeficit } from './types';
 
 // Function to format player names based on who played as white/black
 export const formatMatchup = (playerName: string, opponentName: string, playedAs?: 'white' | 'black') => {
@@ -40,4 +40,9 @@ export const getMatchResults = (collegeTeamGames: Game[]): MatchResults => {
 // Calculate match score
 export const calculateMatchScore = (results: MatchResults): number => {
   return (results.wins + (results.draws * 0.5));
+};
+
+/*calculate deficit score*/
+export const calculateDeficit = (results: MatchDeficit): number => {
+  return (results.losses + (results.draws * 0.5));
 };

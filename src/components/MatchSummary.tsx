@@ -1,7 +1,7 @@
 // MatchSummary.tsx
 import React from 'react';
 import { Game } from './types';
-import { getMatchResults, calculateMatchScore } from './utils';
+import { getMatchResults, calculateMatchScore, calculateDeficit } from './utils';
 import PlayerPerformance from './PlayerPerformance';
 
 interface MatchSummaryProps {
@@ -19,6 +19,7 @@ const MatchSummary: React.FC<MatchSummaryProps> = ({
 
   const matchResults = getMatchResults(collegeTeamGames);
   const score = calculateMatchScore(matchResults);
+  const deficit = calculateDeficit(matchResults);
 
   return (
     <div className="mb-6 p-4 bg-gray-50 rounded-lg">
@@ -51,7 +52,7 @@ const MatchSummary: React.FC<MatchSummaryProps> = ({
         </div>
         <div className="p-3 bg-blue-100 rounded text-center">
           <p className="text-sm text-blue-700">Match Score</p>
-          <p className="text-lg font-bold text-blue-800"> {score}</p>
+          <p className="text-lg font-bold text-blue-800"> {score} - {deficit}</p>
           {/* <p className="text-lg font-bold text-blue-800">
             {score}
           </p>

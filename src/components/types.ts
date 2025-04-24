@@ -28,3 +28,9 @@ export interface Game {
     losses: number;
     draws: number;
   }
+
+  export interface MatchDeficit {
+    wins: number;
+    losses: number;
+    draws: number;
+  }
