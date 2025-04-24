@@ -22,7 +22,7 @@ const PlayerSelector: React.FC<PlayerSelectorProps> = ({
   return (
     <div className="mb-4">
       <label htmlFor="playerSelect" className="block text-gray-700 mb-2">
-        Filter by Player:
+        Select Player:
       </label>
       <select 
         id="playerSelect"
@@ -30,7 +30,7 @@ const PlayerSelector: React.FC<PlayerSelectorProps> = ({
         value={selectedPlayer}
         onChange={handleChange}
       >
-        <option value="">-- All Players --</option>
+        <option value="">-- Select Player --</option>
         {playerNames.map((name) => (
           <option key={name} value={name}>
             {name}

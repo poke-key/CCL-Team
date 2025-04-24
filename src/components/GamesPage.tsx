@@ -24,7 +24,7 @@ const GamesPage: React.FC = () => {
   // Get games for the selected player
   const playerGames = selectedPlayer 
     ? collegeTeamGames.filter(game => game.playerName === selectedPlayer)
-    : collegeTeamGames;
+    : [];
 
   // Get the selected college team name
   const selectedTeamName = selectedCollegeTeam 
@@ -73,11 +73,19 @@ const GamesPage: React.FC = () => {
                   setSelectedGame={setSelectedGame}
                 />
                 
-                {/* Display Games Table */}
-                <GamesList 
-                  games={playerGames}
-                  setSelectedGame={setSelectedGame}
-                />
+                {/* Display Games Table - only if player is selected */}
+                {selectedPlayer && (
+                  <GamesList 
+                    games={playerGames}
+                    setSelectedGame={setSelectedGame}
+                  />
+                )}
+                
+                {!selectedPlayer && (
+                  <p className="text-gray-600 text-center italic my-4">
+                    Select a player to view their games
+                  </p>
+                )}
                 
                 {/* Chess Board Display with Chess.com Embed */}
                 <GameView selectedGame={selectedGame} />
