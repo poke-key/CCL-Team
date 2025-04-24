@@ -1234,5 +1234,83 @@ export const allGames: Game[] = [
   collegeTeam: "washington-b",
   playerName: "Falak Tulsi"
 }, 
+{
+  id: 96,
+  opponent: "Insaan0201",
+  result: "win",
+  date: "2025-03-22",
+  chessComId: "13152000",
+  round: "Round 1",
+  timeControl: "5+2",
+  playedAs: "black",
+  notes: "Player username: king_kunal",
+  collegeTeam: "vit-i",
+  playerName: "Kunal Shrivastav"
+},
+{
+  id: 97,
+  opponent: "utkarsh0509",
+  result: "win",
+  date: "2025-03-22",
+  chessComId: "13152020",
+  round: "Round 2",
+  timeControl: "5+2",
+  playedAs: "white",
+  notes: "Player username: king_kunal",
+  collegeTeam: "vit-i",
+  playerName: "Kunal Shrivastav"
+},
+{
+  id: 98,
+  opponent: "yashg_588",
+  result: "win",
+  date: "2025-03-22",
+  chessComId: "13152026",
+  round: "Round 3",
+  timeControl: "5+2",
+  playedAs: "white",
+  notes: "Player username: king_kunal",
+  collegeTeam: "vit-i",
+  playerName: "Kunal Shrivastav"
+},
+{
+  id: 99,
+  opponent: "darkknight1231",
+  result: "loss",
+  date: "2025-03-22",
+  chessComId: "13152034",
+  round: "Round 4",
+  timeControl: "5+2",
+  playedAs: "black",
+  notes: "Player username: king_kunal",
+  collegeTeam: "vit-i",
+  playerName: "Kunal Shrivastav"
+},
+{
+  id: 100,
+  opponent: "darkknight1231",
+  result: "win",
+  date: "2025-03-22",
+  chessComId: "13152042",
+  round: "Round 5",
+  timeControl: "3+2",
+  playedAs: "white",
+  notes: "Player username: king_kunal",
+  collegeTeam: "vit-i",
+  playerName: "Kunal Shrivastav"
+},
+{
+  id: 101,
+  opponent: "darkknight1231",
+  result: "win",
+  date: "2025-03-22",
+  chessComId: "13152052",
+  round: "Round 6",
+  timeControl: "1+2",
+  playedAs: "black",
+  notes: "Player username: king_kunal",
+  collegeTeam: "vit-i",
+  playerName: "Kunal Shrivastav"
+},
 
 ];
