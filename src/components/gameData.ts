@@ -22,6 +22,7 @@ export const allGames: Game[] = [
     round: "Round 1",
     timeControl: "5+2",
     playedAs: "black",
+    notes: "Player username: king_kunal",
     collegeTeam: "uwaterloo-b",
     playerName: "Kunal Shrivastav"
   },
