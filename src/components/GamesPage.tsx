@@ -107,5 +107,5 @@ const GamesPage: React.FC = () => {
     </div>
   );
 };
- 
+
 export default GamesPage;
