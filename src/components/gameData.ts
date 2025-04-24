@@ -35,6 +35,7 @@ export const allGames: Game[] = [
     round: "Round 2",
     timeControl: "5+2",
     playedAs: "black",
+    notes: "Player username: king_kunal",
     collegeTeam: "uwaterloo-b",
     playerName: "Kunal Shrivastav"
   },
@@ -47,6 +48,7 @@ export const allGames: Game[] = [
     round: "Round 3",
     timeControl: "5+2",
     playedAs: "black",
+    notes: "Player username: king_kunal",
     collegeTeam: "uwaterloo-b",
     playerName: "Kunal Shrivastav"
   },
@@ -59,6 +61,7 @@ export const allGames: Game[] = [
     round: "Round 4",
     timeControl: "5+2",
     playedAs: "white",
+    notes: "Player username: king_kunal",
     collegeTeam: "uwaterloo-b",
     playerName: "Kunal Shrivastav"
   },
@@ -71,6 +74,7 @@ export const allGames: Game[] = [
     round: "Round 5",
     timeControl: "3+2",
     playedAs: "black",
+    notes: "Player username: king_kunal",
     collegeTeam: "uwaterloo-b",
     playerName: "Kunal Shrivastav"
   },
@@ -83,6 +87,7 @@ export const allGames: Game[] = [
     round: "Round 6 (Final)",
     timeControl: "1+2",
     playedAs: "white",
+    notes: "Player username: king_kunal",
     collegeTeam: "uwaterloo-b",
     playerName: "Kunal Shrivastav"
   },
@@ -97,6 +102,7 @@ export const allGames: Game[] = [
     round: "Round 1",
     timeControl: "5+2",
     playedAs: "black",
+    notes: "Player username: king_kunal",
     collegeTeam: "texas-austin-d",
     playerName: "Kunal Shrivastav"
   },
@@ -109,6 +115,7 @@ export const allGames: Game[] = [
     round: "Round 2",
     timeControl: "5+2",
     playedAs: "white",
+    notes: "Player username: king_kunal",
     collegeTeam: "texas-austin-d",
     playerName: "Kunal Shrivastav"
   },
@@ -121,6 +128,7 @@ export const allGames: Game[] = [
     round: "Round 3",
     timeControl: "5+2",
     playedAs: "white",
+    notes: "Player username: king_kunal",
     collegeTeam: "texas-austin-d",
     playerName: "Kunal Shrivastav"
   },
@@ -532,6 +540,7 @@ export const allGames: Game[] = [
     round: "Round 1",
     timeControl: "5+2",
     playedAs: "black",
+    notes: "Player username: king_kunal",
     collegeTeam: "unizambezea-a",
     playerName: "Kunal Shrivastav"
   },
@@ -544,6 +553,7 @@ export const allGames: Game[] = [
     round: "Round 2",
     timeControl: "5+2",
     playedAs: "white",
+    notes: "Player username: king_kunal",
     collegeTeam: "unizambezea-a",
     playerName: "Kunal Shrivastav"
   },
@@ -556,6 +566,7 @@ export const allGames: Game[] = [
     round: "Round 3",
     timeControl: "5+2",
     playedAs: "black",
+    notes: "Player username: king_kunal",
     collegeTeam: "unizambezea-a",
     playerName: "Kunal Shrivastav"
   },
@@ -568,6 +579,7 @@ export const allGames: Game[] = [
     round: "Round 4",
     timeControl: "5+2",
     playedAs: "white",
+    notes: "Player username: king_kunal",
     collegeTeam: "unizambezea-a",
     playerName: "Kunal Shrivastav"
   },
@@ -738,6 +750,7 @@ export const allGames: Game[] = [
     round: "Round 1",
     timeControl: "5+2",
     playedAs: "black",
+    notes: "Player username: king_kunal",
     collegeTeam: "washington-b",
     playerName: "Kunal Shrivastav"
   },
@@ -750,6 +763,7 @@ export const allGames: Game[] = [
     round: "Round 2",
     timeControl: "5+2",
     playedAs: "white",
+    notes: "Player username: king_kunal",
     collegeTeam: "washington-b",
     playerName: "Kunal Shrivastav"
   },
@@ -762,6 +776,7 @@ export const allGames: Game[] = [
     round: "Round 3",
     timeControl: "5+2",
     playedAs: "black",
+    notes: "Player username: king_kunal",
     collegeTeam: "washington-b",
     playerName: "Kunal Shrivastav"
   },
@@ -774,6 +789,7 @@ export const allGames: Game[] = [
     round: "Round 4",
     timeControl: "5+2",
     playedAs: "white",
+    notes: "Player username: king_kunal",
     collegeTeam: "washington-b",
     playerName: "Kunal Shrivastav"
   }, 
@@ -786,6 +802,7 @@ export const allGames: Game[] = [
     round: "Round 5",
     timeControl: "3+2",
     playedAs: "black",
+    notes: "Player username: king_kunal",
     collegeTeam: "washington-b",
     playerName: "Kunal Shrivastav"
   }, 
@@ -798,6 +815,7 @@ export const allGames: Game[] = [
     round: "Round 6",
     timeControl: "1+2",
     playedAs: "white",
+    notes: "Player username: king_kunal",
     collegeTeam: "washington-b",
     playerName: "Kunal Shrivastav"
   }, 
@@ -810,6 +828,7 @@ export const allGames: Game[] = [
     round: "Round 7",
     timeControl: "1+2",
     playedAs: "black",
+    notes: "Player username: king_kunal",
     collegeTeam: "washington-b",
     playerName: "Kunal Shrivastav"
   }, 
@@ -822,6 +841,7 @@ export const allGames: Game[] = [
     round: "Round 8",
     timeControl: "1+2",
     playedAs: "white",
+    notes: "Player username: king_kunal",
     collegeTeam: "washington-b",
     playerName: "Kunal Shrivastav"
   }, 
@@ -834,6 +854,7 @@ export const allGames: Game[] = [
     round: "Round 9",
     timeControl: "1+2",
     playedAs: "black",
+    notes: "Player username: king_kunal",
     collegeTeam: "washington-b",
     playerName: "Kunal Shrivastav"
   }, 
@@ -846,6 +867,7 @@ export const allGames: Game[] = [
     round: "Round 10",
     timeControl: "1+2",
     playedAs: "white",
+    notes: "Player username: king_kunal",
     collegeTeam: "washington-b",
     playerName: "Kunal Shrivastav"
   }, 
