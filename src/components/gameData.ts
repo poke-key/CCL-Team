@@ -1313,5 +1313,83 @@ export const allGames: Game[] = [
   collegeTeam: "vit-i",
   playerName: "Kunal Shrivastav"
 },
+{
+  id: 102,
+  opponent: "utkarsh0509",
+  result: "win",
+  date: "2025-03-22",
+  chessComId: "13152060",
+  round: "Round 1",
+  timeControl: "5+2",
+  playedAs: "black",
+  notes: "Player username: SuperMaanas",
+  collegeTeam: "vit-i",
+  playerName: "Maanas Kollegal"
+},
+{
+  id: 102,
+  opponent: "utkarsh0509",
+  result: "win",
+  date: "2025-03-22",
+  chessComId: "13152060",
+  round: "Round 2",
+  timeControl: "5+2",
+  playedAs: "black",
+  notes: "Player username: SuperMaanas",
+  collegeTeam: "vit-i",
+  playerName: "Maanas Kollegal"
+},
+{
+  id: 102,
+  opponent: "utkarsh0509",
+  result: "win",
+  date: "2025-03-22",
+  chessComId: "13152060",
+  round: "Round 3",
+  timeControl: "5+2",
+  playedAs: "black",
+  notes: "Player username: SuperMaanas",
+  collegeTeam: "vit-i",
+  playerName: "Maanas Kollegal"
+},
+{
+  id: 102,
+  opponent: "utkarsh0509",
+  result: "win",
+  date: "2025-03-22",
+  chessComId: "13152060",
+  round: "Round 4",
+  timeControl: "5+2",
+  playedAs: "black",
+  notes: "Player username: SuperMaanas",
+  collegeTeam: "vit-i",
+  playerName: "Maanas Kollegal"
+},
+{
+  id: 102,
+  opponent: "utkarsh0509",
+  result: "win",
+  date: "2025-03-22",
+  chessComId: "13152060",
+  round: "Round 5",
+  timeControl: "3+2",
+  playedAs: "black",
+  notes: "Player username: SuperMaanas",
+  collegeTeam: "vit-i",
+  playerName: "Maanas Kollegal"
+},
+{
+  id: 102,
+  opponent: "utkarsh0509",
+  result: "win",
+  date: "2025-03-22",
+  chessComId: "13152060",
+  round: "Round 6",
+  timeControl: "1+2",
+  playedAs: "black",
+  notes: "Player username: SuperMaanas",
+  collegeTeam: "vit-i",
+  playerName: "Maanas Kollegal"
+},
 
 ];
