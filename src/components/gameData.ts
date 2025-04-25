@@ -1648,9 +1648,22 @@ export const allGames: Game[] = [
   result: "win",
   date: "2025-03-29",
   chessComId: "13157396",
-  round: "Round 5",
+  round: "Round 1",
   timeControl: "5+2",
   playedAs: "black",
+  notes: "Player username: SuperMaanas",
+  collegeTeam: "univ-wash_playoff",
+  playerName: "Maanas Kollegal"
+}, 
+{
+  id: 127,
+  opponent: "jkmckenzzz",
+  result: "loss",
+  date: "2025-03-29",
+  chessComId: "13157402",
+  round: "Round 2",
+  timeControl: "5+2",
+  playedAs: "white",
   notes: "Player username: SuperMaanas",
   collegeTeam: "univ-wash_playoff",
   playerName: "Maanas Kollegal"
