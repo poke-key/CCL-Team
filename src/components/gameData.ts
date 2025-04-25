@@ -1668,7 +1668,47 @@ export const allGames: Game[] = [
   collegeTeam: "univ-wash_playoff",
   playerName: "Maanas Kollegal"
 }, 
+{
+  id: 128,
+  opponent: "raigisan001",
+  result: "loss",
+  date: "2025-03-29",
+  chessComId: "13157434",
+  round: "Round 3",
+  timeControl: "5+2",
+  playedAs: "white",
+  notes: "Player username: SuperMaanas",
+  collegeTeam: "univ-wash_playoff",
+  playerName: "Maanas Kollegal"
+},
+{
+  id: 129,
+  opponent: "SirPoetVic",
+  result: "loss",
+  date: "2025-03-29",
+  chessComId: "13157438",
+  round: "Round 4",
+  timeControl: "5+2",
+  playedAs: "black",
+  notes: "Player username: SuperMaanas",
+  collegeTeam: "univ-wash_playoff",
+  playerName: "Maanas Kollegal"
+}, 
+{
+  id: 130,
+  opponent: "SirPoetVic",
+  result: "loss",
+  date: "2025-03-29",
+  chessComId: "13157444",
+  round: "Round 5",
+  timeControl: "3+2",
+  playedAs: "white",
+  notes: "Player username: SuperMaanas",
+  collegeTeam: "univ-wash_playoff",
+  playerName: "Maanas Kollegal"
+},
 //ved from the fed playoffs
+
 
 //skizzers playoffs
 ];
