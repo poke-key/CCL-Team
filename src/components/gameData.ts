@@ -1742,7 +1742,7 @@ export const allGames: Game[] = [
   chessComId: "13157458",
   round: "Round 3",
   timeControl: "5+2",
-  playedAs: "white",
+  playedAs: "black",
   notes: "Player username: coolguy3949",
   collegeTeam: "univ-wash_playoff",
   playerName: "Vedh Vasu"
@@ -1755,7 +1755,7 @@ export const allGames: Game[] = [
   chessComId: "13157466",
   round: "Round 4",
   timeControl: "5+2",
-  playedAs: "black",
+  playedAs: "white",
   notes: "Player username: coolguy3949",
   collegeTeam: "univ-wash_playoff",
   playerName: "Vedh Vasu"
@@ -1768,7 +1768,7 @@ export const allGames: Game[] = [
   chessComId: "13157472",
   round: "Round 5",
   timeControl: "3+2",
-  playedAs: "white",
+  playedAs: "black",
   notes: "Player username: coolguy3949",
   collegeTeam: "univ-wash_playoff",
   playerName: "Vedh Vasu"
