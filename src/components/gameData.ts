@@ -1775,5 +1775,19 @@ export const allGames: Game[] = [
 },
 
 
-//skizzers playoffs
+//Falak Tulsi playoffs
+{
+  id: 136,
+  opponent: "raigisan001",
+  result: "loss",
+  date: "2025-03-29",
+  chessComId: "13157500",
+  round: "Round 1",
+  timeControl: "5+2",
+  playedAs: "white",
+  notes: "Player username: skizzers13",
+  collegeTeam: "univ-wash_playoff",
+  playerName: "Falak Tulsi"
+},
+
 ];
