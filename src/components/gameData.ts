@@ -1708,6 +1708,71 @@ export const allGames: Game[] = [
   playerName: "Maanas Kollegal"
 },
 //ved from the fed playoffs
+{
+  id: 131,
+  opponent: "SirPoetVic",
+  result: "loss",
+  date: "2025-03-29",
+  chessComId: "13157446",
+  round: "Round 1",
+  timeControl: "5+2",
+  playedAs: "white",
+  notes: "Player username: coolguy3949",
+  collegeTeam: "univ-wash_playoff",
+  playerName: "Vedh Vasu"
+},
+{
+  id: 132,
+  opponent: "raigisan001",
+  result: "draw",
+  date: "2025-03-29",
+  chessComId: "13157452",
+  round: "Round 2",
+  timeControl: "5+2",
+  playedAs: "black",
+  notes: "Player username: coolguy3949",
+  collegeTeam: "univ-wash_playoff",
+  playerName: "Vedh Vasu"
+}, 
+{
+  id: 133,
+  opponent: "jkmckenzzz",
+  result: "loss",
+  date: "2025-03-29",
+  chessComId: "13157462",
+  round: "Round 3",
+  timeControl: "5+2",
+  playedAs: "white",
+  notes: "Player username: coolguy3949",
+  collegeTeam: "univ-wash_playoff",
+  playerName: "Vedh Vasu"
+}, 
+{
+  id: 134,
+  opponent: "kingofdapark",
+  result: "win",
+  date: "2025-03-29",
+  chessComId: "13157466",
+  round: "Round 4",
+  timeControl: "5+2",
+  playedAs: "black",
+  notes: "Player username: coolguy3949",
+  collegeTeam: "univ-wash_playoff",
+  playerName: "Vedh Vasu"
+}, 
+{
+  id: 135,
+  opponent: "kingofdapark",
+  result: "loss",
+  date: "2025-03-29",
+  chessComId: "13157472",
+  round: "Round 5",
+  timeControl: "3+2",
+  playedAs: "white",
+  notes: "Player username: coolguy3949",
+  collegeTeam: "univ-wash_playoff",
+  playerName: "Vedh Vasu"
+},
 
 
 //skizzers playoffs
