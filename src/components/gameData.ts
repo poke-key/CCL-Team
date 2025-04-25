@@ -1642,8 +1642,207 @@ export const allGames: Game[] = [
   playerName: "Kunal Shrivastav"
 }, 
 //subermaanium chaacha playoffs
-
+{
+  id: 126,
+  opponent: "kingofdapark",
+  result: "win",
+  date: "2025-03-29",
+  chessComId: "13157396",
+  round: "Round 1",
+  timeControl: "5+2",
+  playedAs: "black",
+  notes: "Player username: SuperMaanas",
+  collegeTeam: "univ-wash_playoff",
+  playerName: "Maanas Kollegal"
+}, 
+{
+  id: 127,
+  opponent: "jkmckenzzz",
+  result: "loss",
+  date: "2025-03-29",
+  chessComId: "13157402",
+  round: "Round 2",
+  timeControl: "5+2",
+  playedAs: "white",
+  notes: "Player username: SuperMaanas",
+  collegeTeam: "univ-wash_playoff",
+  playerName: "Maanas Kollegal"
+}, 
+{
+  id: 128,
+  opponent: "raigisan001",
+  result: "loss",
+  date: "2025-03-29",
+  chessComId: "13157434",
+  round: "Round 3",
+  timeControl: "5+2",
+  playedAs: "white",
+  notes: "Player username: SuperMaanas",
+  collegeTeam: "univ-wash_playoff",
+  playerName: "Maanas Kollegal"
+},
+{
+  id: 129,
+  opponent: "SirPoetVic",
+  result: "loss",
+  date: "2025-03-29",
+  chessComId: "13157438",
+  round: "Round 4",
+  timeControl: "5+2",
+  playedAs: "black",
+  notes: "Player username: SuperMaanas",
+  collegeTeam: "univ-wash_playoff",
+  playerName: "Maanas Kollegal"
+}, 
+{
+  id: 130,
+  opponent: "SirPoetVic",
+  result: "win",
+  date: "2025-03-29",
+  chessComId: "13157444",
+  round: "Round 5",
+  timeControl: "3+2",
+  playedAs: "white",
+  notes: "Player username: SuperMaanas",
+  collegeTeam: "univ-wash_playoff",
+  playerName: "Maanas Kollegal"
+},
 //ved from the fed playoffs
+{
+  id: 131,
+  opponent: "SirPoetVic",
+  result: "loss",
+  date: "2025-03-29",
+  chessComId: "13157446",
+  round: "Round 1",
+  timeControl: "5+2",
+  playedAs: "white",
+  notes: "Player username: coolguy3949",
+  collegeTeam: "univ-wash_playoff",
+  playerName: "Vedh Vasu"
+},
+{
+  id: 132,
+  opponent: "raigisan001",
+  result: "draw",
+  date: "2025-03-29",
+  chessComId: "13157452",
+  round: "Round 2",
+  timeControl: "5+2",
+  playedAs: "black",
+  notes: "Player username: coolguy3949",
+  collegeTeam: "univ-wash_playoff",
+  playerName: "Vedh Vasu"
+}, 
+{
+  id: 133,
+  opponent: "jkmckenzzz",
+  result: "loss",
+  date: "2025-03-29",
+  chessComId: "13157458",
+  round: "Round 3",
+  timeControl: "5+2",
+  playedAs: "black",
+  notes: "Player username: coolguy3949",
+  collegeTeam: "univ-wash_playoff",
+  playerName: "Vedh Vasu"
+}, 
+{
+  id: 134,
+  opponent: "kingofdapark",
+  result: "win",
+  date: "2025-03-29",
+  chessComId: "13157474",
+  round: "Round 4",
+  timeControl: "5+2",
+  playedAs: "white",
+  notes: "Player username: coolguy3949",
+  collegeTeam: "univ-wash_playoff",
+  playerName: "Vedh Vasu"
+}, 
+{
+  id: 135,
+  opponent: "kingofdapark",
+  result: "loss",
+  date: "2025-03-29",
+  chessComId: "13157482",
+  round: "Round 5",
+  timeControl: "3+2",
+  playedAs: "black",
+  notes: "Player username: coolguy3949",
+  collegeTeam: "univ-wash_playoff",
+  playerName: "Vedh Vasu"
+},
 
-//skizzers playoffs
+
+//Falak Tulsi playoffs
+{
+  id: 136,
+  opponent: "raigisan001",
+  result: "loss",
+  date: "2025-03-29",
+  chessComId: "13157500",
+  round: "Round 1",
+  timeControl: "5+2",
+  playedAs: "white",
+  notes: "Player username: skizzers13",
+  collegeTeam: "univ-wash_playoff",
+  playerName: "Falak Tulsi"
+},
+
+{
+  id: 137,
+  opponent: "SirPoetVic",
+  result: "loss",
+  date: "2025-03-29",
+  chessComId: "13157526",
+  round: "Round 2",
+  timeControl: "5+2",
+  playedAs: "black",
+  notes: "Player username: skizzers13",
+  collegeTeam: "univ-wash_playoff",
+  playerName: "Falak Tulsi"
+},
+{
+  id: 138,
+  opponent: "kingofdapark",
+  result: "win",
+  date: "2025-03-29",
+  chessComId: "13157528",
+  round: "Round 3",
+  timeControl: "5+2",
+  playedAs: "white",
+  notes: "Player username: skizzers13",
+  collegeTeam: "univ-wash_playoff",
+  playerName: "Falak Tulsi"
+},
+{
+  id: 139,
+  opponent: "jkmckenzzz",
+  result: "draw",
+  date: "2025-03-29",
+  chessComId: "13157534",
+  round: "Round 4",
+  timeControl: "5+2",
+  playedAs: "black",
+  notes: "Player username: skizzers13",
+  collegeTeam: "univ-wash_playoff",
+  playerName: "Falak Tulsi"
+},
+{
+  id: 140,
+  opponent: "jkmckenzzz",
+  result: "draw",
+  date: "2025-03-29",
+  chessComId: "13157542",
+  round: "Round 5",
+  timeControl: "3+2",
+  playedAs: "white",
+  notes: "Player username: skizzers13",
+  collegeTeam: "univ-wash_playoff",
+  playerName: "Falak Tulsi"
+
+},
+
+
 ];
