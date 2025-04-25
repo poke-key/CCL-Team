@@ -1642,7 +1642,19 @@ export const allGames: Game[] = [
   playerName: "Kunal Shrivastav"
 }, 
 //subermaanium chaacha playoffs
-
+{
+  id: 126,
+  opponent: "kingofdapark",
+  result: "win",
+  date: "2025-03-29",
+  chessComId: "13157396",
+  round: "Round 5",
+  timeControl: "5+2",
+  playedAs: "black",
+  notes: "Player username: SuperMaanas",
+  collegeTeam: "univ-wash_playoff",
+  playerName: "Maanas Kollegal"
+}, 
 //ved from the fed playoffs
 
 //skizzers playoffs
