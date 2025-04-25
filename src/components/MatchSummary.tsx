@@ -3,6 +3,7 @@ import React from 'react';
 import { Game } from './types';
 import { getMatchResults, calculateMatchScore, calculateDeficit } from './utils';
 import PlayerPerformance from './PlayerPerformance';
+import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from "../components/ui/table";
 
 interface MatchSummaryProps {
   collegeTeamGames: Game[];
@@ -25,27 +26,25 @@ const MatchSummary: React.FC<MatchSummaryProps> = ({
     <div className="mb-6">
       <h5 className="font-medium text-lg mb-3">Match Summary</h5>
       
-      {/* Match Statistics Table */}
-      <div className="bg-white rounded-lg shadow overflow-hidden mb-4">
-        <table className="min-w-full">
-          <thead>
-            <tr className="bg-blue-800 text-white">
-              <th className="py-3 px-4 text-center">Wins</th>
-              <th className="py-3 px-4 text-center">Losses</th>
-              <th className="py-3 px-4 text-center">Draws</th>
-              <th className="py-3 px-4 text-center">Match Score</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td className="py-4 px-6 text-center font-bold text-green-600 text-lg border-b">{matchResults.wins}</td>
-              <td className="py-4 px-6 text-center font-bold text-red-600 text-lg border-b">{matchResults.losses}</td>
-              <td className="py-4 px-6 text-center font-bold text-yellow-600 text-lg border-b">{matchResults.draws}</td>
-              <td className="py-4 px-6 text-center font-bold text-blue-600 text-lg border-b">{score} - {deficit}</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      <Table>
+        <TableCaption>Match statistics and performance</TableCaption>
+        <TableHeader>
+          <TableRow>
+            <TableHead className="text-center">Wins</TableHead>
+            <TableHead className="text-center">Losses</TableHead>
+            <TableHead className="text-center">Draws</TableHead>
+            <TableHead className="text-center">Match Score</TableHead>
+          </TableRow>
+        </TableHeader>
+        <TableBody>
+          <TableRow>
+            <TableCell className="text-center font-bold text-green-600">{matchResults.wins}</TableCell>
+            <TableCell className="text-center font-bold text-red-600">{matchResults.losses}</TableCell>
+            <TableCell className="text-center font-bold text-yellow-600">{matchResults.draws}</TableCell>
+            <TableCell className="text-center font-bold text-blue-600">{score} - {deficit}</TableCell>
+          </TableRow>
+        </TableBody>
+      </Table>
       
       {/* Player performance breakdown */}
       <PlayerPerformance 
