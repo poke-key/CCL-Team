@@ -1,6 +1,7 @@
 // CollegeTeamSelector.tsx
-import React from 'react';
 import { CollegeTeam } from './types';
+import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from './ui/select';
+//never used SelectLabel
 
 interface CollegeTeamSelectorProps {
   collegeTeams: CollegeTeam[];
@@ -17,30 +18,24 @@ const CollegeTeamSelector: React.FC<CollegeTeamSelectorProps> = ({
   setSelectedPlayer,
   setSelectedGame
 }) => {
-  const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    setSelectedCollegeTeam(e.target.value);
+  const onChange = (value: string) => {
+    setSelectedCollegeTeam(value);
     setSelectedPlayer("");
     setSelectedGame(null);
   };
 
   return (
     <div className="mb-6">
-      <label htmlFor="collegeSelect" className="block text-gray-700 mb-2">
-        Select Opponent College Team:
-      </label>
-      <select 
-        id="collegeSelect"
-        className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
-        value={selectedCollegeTeam}
-        onChange={handleChange}
-      >
-        <option value="">-- Select a college team --</option>
-        {collegeTeams.map((team) => (
-          <option key={team.id} value={team.id}>
-            {team.name}
-          </option>
-        ))}
-      </select>
+      <Select value={selectedCollegeTeam} onValueChange={onChange}>
+        <SelectTrigger className="w-full">
+          <SelectValue placeholder="Select a college team" />
+        </SelectTrigger>
+        <SelectContent>
+          {collegeTeams.map(team => (
+            <SelectItem key={team.id} value={team.id}>{team.name}</SelectItem>
+          ))}
+        </SelectContent>
+      </Select>
     </div>
   );
 };

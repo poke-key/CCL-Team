@@ -1,5 +1,4 @@
-// PlayerSelector.tsx
-import React from 'react';
+import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from './ui/select';
 
 interface PlayerSelectorProps {
   playerNames: string[];
@@ -14,29 +13,23 @@ const PlayerSelector: React.FC<PlayerSelectorProps> = ({
   setSelectedPlayer,
   setSelectedGame
 }) => {
-  const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    setSelectedPlayer(e.target.value);
+  const onChange = (value: string) => {
+    setSelectedPlayer(value);
     setSelectedGame(null);
   };
 
   return (
     <div className="mb-4">
-      <label htmlFor="playerSelect" className="block text-gray-700 mb-2">
-        Select Player:
-      </label>
-      <select 
-        id="playerSelect"
-        className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
-        value={selectedPlayer}
-        onChange={handleChange}
-      >
-        <option value="">-- Select Player --</option>
-        {playerNames.map((name) => (
-          <option key={name} value={name}>
-            {name}
-          </option>
-        ))}
-      </select>
+      <Select value={selectedPlayer} onValueChange={onChange}>
+        <SelectTrigger className="w-full">
+          <SelectValue placeholder="Select a player" />
+        </SelectTrigger>
+        <SelectContent>
+          {playerNames.map(name => (
+            <SelectItem key={name} value={name}>{name}</SelectItem>
+          ))}
+        </SelectContent>
+      </Select>
     </div>
   );
 };
