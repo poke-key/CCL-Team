@@ -4,10 +4,10 @@ import { Game, CollegeTeam } from './types';
 // College teams we played against
 export const collegeTeams: CollegeTeam[] = [
   { name: "CCL UWATERLOO TEAM B W25(Playoff: Finals)", id: "uwaterloo-b" },
-  { name: "University of Washington-B", id: "washington-b" },
+  { name: "University of Washington-B(Regular)", id: "washington-b" },
   { name: "VIT I 2025 (INT CCL)(Playoff: Quarterfinals)", id: "vit-i" },
-  { name: "University of Texas at Austin - D", id: "texas-austin-d" },
-  { name: "UNIZAMBEZEA A", id: "unizambezea-a" },
+  { name: "University of Texas at Austin - D(Regular)", id: "texas-austin-d" },
+  { name: "UNIZAMBEZEA A(Regular)", id: "unizambezea-a" },
   {name: "University of Washington-B(Playoff: Semi Finals)", id: "univ-wash_playoff" }
 ];
 
