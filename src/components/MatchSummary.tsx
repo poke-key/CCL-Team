@@ -1,9 +1,7 @@
-// MatchSummary.tsx
 import React from 'react';
 import { Game } from './types';
-import { getMatchResults, calculateMatchScore, calculateDeficit } from './utils';
-import PlayerPerformance from './PlayerPerformance';
-import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from "../components/ui/table";
+import { getMatchResults, calculateMatchScore, calculateDeficit, getPlayerPerformance } from './utils';
+import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from './ui/table';
 
 interface MatchSummaryProps {
   collegeTeamGames: Game[];
@@ -21,36 +19,48 @@ const MatchSummary: React.FC<MatchSummaryProps> = ({
   const matchResults = getMatchResults(collegeTeamGames);
   const score = calculateMatchScore(matchResults);
   const deficit = calculateDeficit(matchResults);
+  const { wins, losses, draws } = matchResults;
 
   return (
-    <div className="mb-6">
-      <h5 className="font-medium text-lg mb-3">Match Summary</h5>
-      
+    <div className="mb-6 overflow-x-auto">
       <Table>
-        <TableCaption>Match statistics and performance</TableCaption>
+        <TableCaption>Match Summary and Player Performance</TableCaption>
         <TableHeader>
           <TableRow>
+            <TableHead>Player</TableHead>
             <TableHead className="text-center">Wins</TableHead>
             <TableHead className="text-center">Losses</TableHead>
             <TableHead className="text-center">Draws</TableHead>
-            <TableHead className="text-center">Match Score</TableHead>
+            <TableHead className="text-center">Score</TableHead>
+            <TableHead className="text-center">Team Score</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
           <TableRow>
-            <TableCell className="text-center font-bold text-green-600">{matchResults.wins}</TableCell>
-            <TableCell className="text-center font-bold text-red-600">{matchResults.losses}</TableCell>
-            <TableCell className="text-center font-bold text-yellow-600">{matchResults.draws}</TableCell>
-            <TableCell className="text-center font-bold text-blue-600">{score} - {deficit}</TableCell>
+            <TableCell>Team Total</TableCell>
+            <TableCell className="text-center font-bold text-green-600">{wins}</TableCell>
+            <TableCell className="text-center font-bold text-red-600">{losses}</TableCell>
+            <TableCell className="text-center font-bold text-yellow-600">{draws}</TableCell>
+            <TableCell className="text-center font-bold text-blue-600">{score}-{deficit}</TableCell>
+            <TableCell />
           </TableRow>
+          {playerNames.map(name => {
+            const performance = getPlayerPerformance(name, collegeTeamGames);
+            const playerScore = performance.wins + performance.draws * 0.5;
+            const totalGames = performance.wins + performance.losses + performance.draws;
+            return (
+              <TableRow key={name}>
+                <TableCell>{name}</TableCell>
+                <TableCell className="text-center">{performance.wins}</TableCell>
+                <TableCell className="text-center">{performance.losses}</TableCell>
+                <TableCell className="text-center">{performance.draws}</TableCell>
+                <TableCell className="text-center">{totalGames > 0 ? `${playerScore}/${totalGames}` : '-'}</TableCell>
+                <TableCell />
+              </TableRow>
+            );
+          })}
         </TableBody>
       </Table>
-      
-      {/* Player performance breakdown */}
-      <PlayerPerformance 
-        playerNames={playerNames}
-        collegeTeamGames={collegeTeamGames}
-      />
     </div>
   );
 };
