@@ -1,4 +1,5 @@
-import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from './ui/select';
+// PlayerSelector.tsx
+import React from 'react';
 
 interface PlayerSelectorProps {
   playerNames: string[];
@@ -13,23 +14,34 @@ const PlayerSelector: React.FC<PlayerSelectorProps> = ({
   setSelectedPlayer,
   setSelectedGame
 }) => {
-  const onChange = (value: string) => {
-    setSelectedPlayer(value);
+  // Use standard HTML select element for better dark theme compatibility
+  const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    setSelectedPlayer(e.target.value);
     setSelectedGame(null);
   };
 
   return (
     <div className="mb-4">
-      <Select value={selectedPlayer} onValueChange={onChange}>
-        <SelectTrigger className="w-full">
-          <SelectValue placeholder="Select a player" />
-        </SelectTrigger>
-        <SelectContent>
-          {playerNames.map(name => (
-            <SelectItem key={name} value={name}>{name}</SelectItem>
-          ))}
-        </SelectContent>
-      </Select>
+      <label htmlFor="playerSelect" className="block text-white mb-2">
+        Select a player:
+      </label>
+      <select
+        id="playerSelect"
+        className="w-full p-2 border border-gray-600 bg-gray-800 text-white rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+        value={selectedPlayer}
+        onChange={handleChange}
+      >
+        <option value="">-- Select a player --</option>
+        {playerNames.map(name => (
+          <option 
+            key={name} 
+            value={name}
+            className="bg-gray-800 text-white"
+          >
+            {name}
+          </option>
+        ))}
+      </select>
     </div>
   );
 };
