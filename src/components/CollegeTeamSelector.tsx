@@ -1,6 +1,7 @@
 // CollegeTeamSelector.tsx
 import React from 'react';
 import { CollegeTeam } from './types';
+import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from './ui/select';
 
 interface CollegeTeamSelectorProps {
   collegeTeams: CollegeTeam[];
@@ -17,35 +18,55 @@ const CollegeTeamSelector: React.FC<CollegeTeamSelectorProps> = ({
   setSelectedPlayer,
   setSelectedGame
 }) => {
-  // Revert to standard HTML select element which will respect your theme
-  const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    setSelectedCollegeTeam(e.target.value);
+  const onChange = (value: string) => {
+    setSelectedCollegeTeam(value);
     setSelectedPlayer("");
     setSelectedGame(null);
   };
 
   return (
     <div className="mb-6">
-      <label htmlFor="collegeSelect" className="block text-white mb-2">
+      <label className="block text-white mb-2">
         Select Opponent College Team:
       </label>
-      <select 
-        id="collegeSelect"
-        className="w-full p-2 border border-gray-600 bg-gray-800 text-white rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
-        value={selectedCollegeTeam}
-        onChange={handleChange}
-      >
-        <option value="">-- Select a college team --</option>
-        {collegeTeams.map((team) => (
-          <option 
-            key={team.id} 
-            value={team.id}
-            className="bg-gray-800 text-white"
+      <div className="relative">
+        <Select value={selectedCollegeTeam} onValueChange={onChange}>
+          <SelectTrigger
+            className="w-full border border-gray-600 bg-gray-700 text-white rounded shadow-none"
+            style={{ 
+              backgroundColor: '#374151', // bg-gray-700 equivalent 
+              borderColor: '#4B5563',    // border-gray-600 equivalent
+              color: 'white'
+            }}
           >
-            {team.name}
-          </option>
-        ))}
-      </select>
+            <SelectValue placeholder="-- Select a college team --" />
+          </SelectTrigger>
+          <SelectContent
+            className="border border-gray-600 rounded shadow-md"
+            style={{ 
+              backgroundColor: '#374151', // bg-gray-700 equivalent 
+              borderColor: '#4B5563',     // border-gray-600 equivalent
+              color: 'white'
+            }}
+          >
+            <div className="bg-gray-700 border-none">
+              {collegeTeams.map(team => (
+                <SelectItem 
+                  key={team.id} 
+                  value={team.id}
+                  className="text-white focus:bg-blue-500 hover:bg-blue-500"
+                  style={{ 
+                    color: 'white',
+                    backgroundColor: '#374151', // bg-gray-700 equivalent
+                  }}
+                >
+                  {team.name}
+                </SelectItem>
+              ))}
+            </div>
+          </SelectContent>
+        </Select>
+      </div>
     </div>
   );
 };
