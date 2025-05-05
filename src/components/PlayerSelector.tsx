@@ -1,5 +1,6 @@
 // PlayerSelector.tsx
 import React from 'react';
+import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from './ui/select';
 
 interface PlayerSelectorProps {
   playerNames: string[];
@@ -14,34 +15,54 @@ const PlayerSelector: React.FC<PlayerSelectorProps> = ({
   setSelectedPlayer,
   setSelectedGame
 }) => {
-  // Use standard HTML select element for better dark theme compatibility
-  const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    setSelectedPlayer(e.target.value);
+  const onChange = (value: string) => {
+    setSelectedPlayer(value);
     setSelectedGame(null);
   };
 
   return (
     <div className="mb-4">
-      <label htmlFor="playerSelect" className="block text-white mb-2">
+      <label className="block text-white mb-2">
         Select a player:
       </label>
-      <select
-        id="playerSelect"
-        className="w-full p-2 border border-gray-600 bg-gray-800 text-white rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
-        value={selectedPlayer}
-        onChange={handleChange}
-      >
-        <option value="">-- Select a player --</option>
-        {playerNames.map(name => (
-          <option 
-            key={name} 
-            value={name}
-            className="bg-gray-800 text-white"
+      <div className="relative">
+        <Select value={selectedPlayer} onValueChange={onChange}>
+          <SelectTrigger
+            className="w-full border border-gray-600 bg-gray-700 text-white rounded shadow-none"
+            style={{ 
+              backgroundColor: '#374151', // bg-gray-700 equivalent 
+              borderColor: '#4B5563',    // border-gray-600 equivalent
+              color: 'white'
+            }}
           >
-            {name}
-          </option>
-        ))}
-      </select>
+            <SelectValue placeholder="-- Select a player --" />
+          </SelectTrigger>
+          <SelectContent
+            className="border border-gray-600 rounded shadow-md"
+            style={{ 
+              backgroundColor: '#374151', // bg-gray-700 equivalent 
+              borderColor: '#4B5563',     // border-gray-600 equivalent
+              color: 'white'
+            }}
+          >
+            <div className="bg-gray-700 border-none">
+              {playerNames.map(name => (
+                <SelectItem 
+                  key={name} 
+                  value={name}
+                  className="text-white focus:bg-blue-500 hover:bg-blue-500"
+                  style={{ 
+                    color: 'white',
+                    backgroundColor: '#374151', // bg-gray-700 equivalent
+                  }}
+                >
+                  {name}
+                </SelectItem>
+              ))}
+            </div>
+          </SelectContent>
+        </Select>
+      </div>
     </div>
   );
 };
