@@ -1846,5 +1846,4 @@ export const allGames: Game[] = [
 
 },
 
-
 ];
