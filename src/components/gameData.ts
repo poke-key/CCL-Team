@@ -775,7 +775,7 @@ export const allGames: Game[] = [
     opponent: "LionBlade45",
     result: "win",
     date: "2025-03-08",
-    chessComId: "13145610",
+    chessComId: "13252968",
     round: "Round 3",
     timeControl: "5+2",
     playedAs: "black",
