@@ -690,12 +690,13 @@ export const allGames: Game[] = [
     collegeTeam: "unizambezea-a",
     playerName: "Vedh Vasu"
   },
+  //falak unizambeezea
   {
     id: 53,
     opponent: "jojoabdul",
     result: "loss",
     date: "2025-02-08",
-    chessComId: "13144866",
+    chessComId: "13252934",
     round: "Round 1",
     timeControl: "5+2",
     playedAs: "black",
