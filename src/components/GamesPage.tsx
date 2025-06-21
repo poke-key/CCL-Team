@@ -7,6 +7,8 @@ import PlayerSelector from './PlayerSelector';
 import MatchSummary from './MatchSummary';
 import GamesList from './GamesList';
 import GameView from './GameView';
+import { Card, CardHeader, CardTitle, CardContent, CardFooter } from './ui/card';
+import { Container } from './ui/container';
 
 const GamesPage: React.FC = () => {
   const [selectedCollegeTeam, setSelectedCollegeTeam] = useState<string>("");
@@ -32,16 +34,18 @@ const GamesPage: React.FC = () => {
     : "";
 
   return (
-    <div className="min-h-screen bg-blue-50 flex flex-col items-center p-4">
-      <div className="max-w-4xl w-full bg-white rounded-lg shadow-lg overflow-hidden">
-        <header className="bg-blue-800 p-6 text-white text-center">
-          <h1 className="text-3xl font-bold mb-2">UCR Collegiate Chess League</h1>
-          <h2 className="text-xl">Games</h2>
-        </header>
+    <Container className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 flex items-center justify-center p-4">
+      <Card className="max-w-6xl w-full shadow-xl">
+        <CardHeader className="bg-gradient-to-r from-blue-800 to-blue-900 dark:from-blue-900 dark:to-blue-950 text-white text-center">
+          <CardTitle className="text-4xl font-bold mb-2">UCR Collegiate Chess League</CardTitle>
+          <div className="text-xl opacity-90">Games & Match Analysis</div>
+        </CardHeader>
         
-        <main className="p-6">
+        <CardContent className="p-8">
           <div className="mb-8">
-            <h3 className="text-2xl font-semibold text-gray-800 mb-4 text-center">Spring 2025 Season Games</h3>
+            <h3 className="text-3xl font-bold text-gray-800 dark:text-gray-200 mb-6 text-center">
+              Spring 2025 Season Games
+            </h3>
             
             {/* College Team Selection Dropdown */}
             <CollegeTeamSelector
@@ -54,10 +58,13 @@ const GamesPage: React.FC = () => {
             
             {/* Display College Team Games Section */}
             {selectedCollegeTeam && (
-              <div>
-                <h4 className="text-xl font-medium text-gray-800 mb-3">
-                  {selectedTeamName} Match
-                </h4>
+              <div className="space-y-6">
+                <div className="text-center">
+                  <h4 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-2">
+                    {selectedTeamName} Match
+                  </h4>
+                  <div className="w-24 h-1 bg-blue-600 mx-auto rounded-full"></div>
+                </div>
                 
                 {/* Match summary statistics */}
                 <MatchSummary 
@@ -82,9 +89,11 @@ const GamesPage: React.FC = () => {
                 )}
                 
                 {!selectedPlayer && (
-                  <p className="text-gray-600 text-center italic my-4">
-                    Select a player to view their games
-                  </p>
+                  <div className="text-center py-8">
+                    <div className="text-gray-400 dark:text-gray-500 text-lg">
+                      Select a player to view their games
+                    </div>
+                  </div>
                 )}
                 
                 {/* Chess Board Display with Chess.com Embed */}
@@ -93,18 +102,22 @@ const GamesPage: React.FC = () => {
             )}
             
             {!selectedCollegeTeam && (
-              <p className="text-gray-600 text-center italic">
-                Select a college team to view games
-              </p>
+              <div className="text-center py-12">
+                <div className="text-gray-500 dark:text-gray-400 text-lg">
+                  Select a college team to view games
+                </div>
+              </div>
             )}
           </div>
-        </main>
+        </CardContent>
         
-        <footer className="bg-gray-100 p-4 text-center text-gray-600 text-sm">
-          <p>© {new Date().getFullYear()} UCR Collegiate Chess League</p>
-        </footer>
-      </div>
-    </div>
+        <CardFooter className="bg-gray-50 dark:bg-gray-800 text-center text-gray-600 dark:text-gray-400 border-t">
+          <div className="w-full text-center">
+            © {new Date().getFullYear()} UCR Collegiate Chess League
+          </div>
+        </CardFooter>
+      </Card>
+    </Container>
   );
 };
 

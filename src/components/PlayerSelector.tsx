@@ -1,6 +1,8 @@
 // PlayerSelector.tsx
 import React from 'react';
 import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from './ui/select';
+import { Label } from './ui/label';
+import { Card, CardContent } from './ui/card';
 
 interface PlayerSelectorProps {
   playerNames: string[];
@@ -21,49 +23,29 @@ const PlayerSelector: React.FC<PlayerSelectorProps> = ({
   };
 
   return (
-    <div className="mb-4">
-      <label className="block text-white mb-2">
-        Select a player:
-      </label>
-      <div className="relative">
+    <Card className="mb-6 border-2 border-dashed border-green-200 dark:border-green-800 bg-green-50/50 dark:bg-green-950/20">
+      <CardContent className="p-6">
+        <Label className="block text-lg font-semibold text-gray-800 dark:text-gray-200 mb-4">
+          Select a Player
+        </Label>
         <Select value={selectedPlayer} onValueChange={onChange}>
-          <SelectTrigger
-            className="w-full border border-gray-600 bg-gray-700 text-white rounded shadow-none"
-            style={{ 
-              backgroundColor: '#374151', // bg-gray-700 equivalent 
-              borderColor: '#4B5563',    // border-gray-600 equivalent
-              color: 'white'
-            }}
-          >
-            <SelectValue placeholder="-- Select a player --" />
+          <SelectTrigger className="w-full h-12 text-lg bg-white dark:bg-gray-800 border-2 border-green-200 dark:border-green-700 hover:border-green-300 dark:hover:border-green-600 transition-colors">
+            <SelectValue placeholder="Choose a player to view their games..." />
           </SelectTrigger>
-          <SelectContent
-            className="border border-gray-600 rounded shadow-md"
-            style={{ 
-              backgroundColor: '#374151', // bg-gray-700 equivalent 
-              borderColor: '#4B5563',     // border-gray-600 equivalent
-              color: 'white'
-            }}
-          >
-            <div className="bg-gray-700 border-none">
-              {playerNames.map(name => (
-                <SelectItem 
-                  key={name} 
-                  value={name}
-                  className="text-white focus:bg-blue-500 hover:bg-blue-500"
-                  style={{ 
-                    color: 'white',
-                    backgroundColor: '#374151', // bg-gray-700 equivalent
-                  }}
-                >
-                  {name}
-                </SelectItem>
-              ))}
-            </div>
+          <SelectContent className="bg-white dark:bg-gray-800 border-2 border-green-200 dark:border-green-700">
+            {playerNames.map(name => (
+              <SelectItem 
+                key={name} 
+                value={name}
+                className="text-gray-800 dark:text-gray-200 hover:bg-green-50 dark:hover:bg-green-900/50 focus:bg-green-100 dark:focus:bg-green-900 cursor-pointer"
+              >
+                {name}
+              </SelectItem>
+            ))}
           </SelectContent>
         </Select>
-      </div>
-    </div>
+      </CardContent>
+    </Card>
   );
 };
 

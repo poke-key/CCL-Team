@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import { Card, CardContent } from './ui/card';
 
 interface ChessGameEmbedProps {
   gameId: string;
@@ -33,24 +34,26 @@ const ChessGameEmbed: React.FC<ChessGameEmbedProps> = ({
 
   return (
     <div className="chess-game-embed">
-      <h3 className="text-xl font-medium text-gray-800 mb-3">{title}</h3>
-      <div className="chess-board-container" ref={containerRef}>
-        <iframe 
-          id={gameId}
-          title={title}
-          frameBorder="0"
-          allowTransparency={true}
-          style={{ 
-            width: '100%', 
-            maxWidth: '560px', //set max width
-            border: 'none',
-            minHeight: '450px', //set min height
-            margin: '0 auto', //center the iframe
-            display: 'block'
-          }}
-          src={`https://www.chess.com/emboard?id=${gameId}`}
-        ></iframe>
-      </div>
+      <Card className="bg-white dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700">
+        <CardContent className="p-6">
+          <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-4 text-center">
+            {title}
+          </h3>
+          <div className="chess-board-container" ref={containerRef}>
+            <iframe 
+              id={gameId}
+              title={title}
+              frameBorder="0"
+              allowTransparency={true}
+              className="w-full max-w-2xl border-2 border-gray-300 dark:border-gray-600 rounded-lg shadow-lg mx-auto block"
+              style={{ 
+                minHeight: '450px',
+              }}
+              src={`https://www.chess.com/emboard?id=${gameId}`}
+            ></iframe>
+          </div>
+        </CardContent>
+      </Card>
     </div>
   );
 };
