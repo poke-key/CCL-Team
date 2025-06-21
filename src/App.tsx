@@ -12,36 +12,48 @@ function App() {
   return (
     <ThemeProvider defaultTheme="system">
       <Router>
-        <Container className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 p-0">
-          <Card className="bg-gradient-to-r from-blue-900 via-blue-800 to-indigo-900 dark:from-blue-950 dark:via-blue-900 dark:to-indigo-950 text-white rounded-none shadow-lg border-0">
-            <CardContent className="max-w-7xl mx-auto flex justify-between items-center p-6">
-              <div className="flex items-center space-x-3">
-                <div className="text-2xl font-bold">♔ UCR Chess</div>
-                <Badge variant="secondary" className="bg-blue-700 text-blue-100 dark:bg-blue-800 dark:text-blue-200">
-                  Spring 2025
-                </Badge>
+        <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900">
+          {/* Navigation Header */}
+          <nav className="sticky top-0 z-50 w-full border-b border-slate-200/50 dark:border-slate-800/50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="flex justify-between items-center h-16">
+                <div className="flex items-center space-x-4">
+                  <div className="flex items-center space-x-3">
+                    <div className="text-3xl">♔</div>
+                    <div className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+                      UCR Chess
+                    </div>
+                  </div>
+                  <Badge variant="secondary" className="bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 px-3 py-1 text-sm font-medium">
+                    Spring 2025
+                  </Badge>
+                </div>
+                
+                <div className="flex items-center space-x-2">
+                  <Link to="/" className="no-underline">
+                    <Button variant="ghost" className="text-slate-800 dark:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-slate-50 px-4 py-2 text-base font-medium">
+                      Home
+                    </Button>
+                  </Link>
+                  <Link to="/games" className="no-underline">
+                    <Button variant="ghost" className="text-slate-800 dark:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-slate-50 px-4 py-2 text-base font-medium">
+                      Games
+                    </Button>
+                  </Link>
+                  <ThemeToggle />
+                </div>
               </div>
-              <div className="flex items-center space-x-6">
-                <Link to="/" className="no-underline">
-                  <Button variant="ghost" className="text-white hover:bg-white/20 hover:text-white">
-                    Home
-                  </Button>
-                </Link>
-                <Link to="/games" className="no-underline">
-                  <Button variant="ghost" className="text-white hover:bg-white/20 hover:text-white">
-                    Games
-                  </Button>
-                </Link>
-                <ThemeToggle />
-              </div>
-            </CardContent>
-          </Card>
+            </div>
+          </nav>
 
-          <Routes>
-            <Route path="/" element={<ChessTeamLandingPage />} />
-            <Route path="/games" element={<GamesPage />} />
-          </Routes>
-        </Container>
+          {/* Main Content */}
+          <main className="flex-1">
+            <Routes>
+              <Route path="/" element={<ChessTeamLandingPage />} />
+              <Route path="/games" element={<GamesPage />} />
+            </Routes>
+          </main>
+        </div>
       </Router>
     </ThemeProvider>
   );
