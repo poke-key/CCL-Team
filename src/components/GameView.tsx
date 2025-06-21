@@ -4,7 +4,7 @@ import { Game } from './types';
 import { formatMatchup } from './utils';
 import ChessGameEmbed from './ChessGameEmbed';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
-import { Separator } from './ui/separator';
+//import { Separator } from './ui/separator';
 
 interface GameViewProps {
   selectedGame: Game | null;
