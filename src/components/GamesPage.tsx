@@ -7,7 +7,7 @@ import PlayerSelector from './PlayerSelector';
 import MatchSummary from './MatchSummary';
 import GamesList from './GamesList';
 import GameView from './GameView';
-import { Card, CardHeader, CardTitle, CardContent, CardFooter } from './ui/card';
+import { Card, CardHeader, CardTitle, CardContent } from './ui/card';
 import { Separator } from './ui/separator';
 
 const GamesPage: React.FC = () => {

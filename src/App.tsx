@@ -3,9 +3,9 @@ import ChessTeamLandingPage from './components/ChessTeamLandingPage';
 import GamesPage from './components/GamesPage';
 import { ThemeProvider } from './components/ThemeProvider';
 import { ThemeToggle } from './components/ThemeToggle';
-import { Card, CardContent } from './components/ui/card';
+//import { Card, CardContent } from './components/ui/card';
 import { Button } from './components/ui/button';
-import { Container } from './components/ui/container';
+//import { Container } from './components/ui/container';
 import { Badge } from './components/ui/badge';
 
 function App() {
