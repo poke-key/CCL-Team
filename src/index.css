@@ -18,6 +18,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.dark {
+  color: #ffffff;
+}
+
 * {
   box-sizing: border-box;
 }
