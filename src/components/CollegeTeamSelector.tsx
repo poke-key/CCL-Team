@@ -3,6 +3,7 @@ import React from 'react';
 import { CollegeTeam } from './types';
 import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from './ui/select';
 import { Label } from './ui/label';
+import { useTheme } from './ThemeProvider';
 
 interface CollegeTeamSelectorProps {
   collegeTeams: CollegeTeam[];
@@ -19,10 +20,24 @@ const CollegeTeamSelector: React.FC<CollegeTeamSelectorProps> = ({
   setSelectedPlayer,
   setSelectedGame
 }) => {
+  const { theme } = useTheme();
+
   const onChange = (value: string) => {
     setSelectedCollegeTeam(value);
     setSelectedPlayer("");
     setSelectedGame(null);
+  };
+
+  const isDarkMode =
+    theme === 'dark' ||
+    (theme === 'system' &&
+      typeof window !== 'undefined' &&
+      window.matchMedia('(prefers-color-scheme: dark)').matches);
+
+  const contentStyle = {
+    backgroundColor: isDarkMode ? '#1e293b' : 'white',
+    border: '2px solid',
+    borderColor: isDarkMode ? '#475569' : '#cbd5e1',
   };
 
   return (
@@ -40,7 +55,7 @@ const CollegeTeamSelector: React.FC<CollegeTeamSelectorProps> = ({
         <SelectTrigger className="w-full h-16 text-xl bg-white dark:bg-slate-800 border-2 border-slate-300 dark:border-slate-600 hover:border-blue-400 dark:hover:border-blue-500 transition-all duration-200 focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
           <SelectValue placeholder="Choose a college team to analyze..." className="text-slate-600 dark:text-slate-300" />
         </SelectTrigger>
-        <SelectContent className="bg-white dark:bg-slate-800 border-2 border-slate-300 dark:border-slate-600 max-h-96">
+        <SelectContent style={contentStyle} className="max-h-96">
           {collegeTeams.map(team => (
             <SelectItem 
               key={team.id} 
