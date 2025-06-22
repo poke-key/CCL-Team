@@ -46,9 +46,9 @@ const GameView: React.FC<GameViewProps> = ({ selectedGame }) => {
           <div className="flex items-center gap-4">
             {getResultBadge(selectedGame.result)}
             {selectedGame.playedAs && (
-              <Badge variant="outline" className="capitalize text-lg px-4 py-2 border-slate-300 dark:border-slate-600 text-slate-800 dark:text-slate-100">
+              <span className="capitalize text-lg px-4 py-2 text-slate-800 dark:text-slate-100">
                 {selectedGame.playedAs}
-              </Badge>
+              </span>
             )}
           </div>
         </div>

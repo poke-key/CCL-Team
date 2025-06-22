@@ -66,11 +66,11 @@ const GamesList: React.FC<GamesListProps> = ({
                 <TableCell className="text-slate-800 dark:text-slate-100 text-lg py-4">{game.opponent}</TableCell>
                 <TableCell className="text-slate-800 dark:text-slate-100 text-lg py-4">{game.round || `Game ${game.id}`}</TableCell>
                 <TableCell className="text-slate-800 dark:text-slate-100 text-lg py-4">{game.timeControl || "-"}</TableCell>
-                <TableCell className="py-4">
+                <TableCell className="py-4 capitalize text-lg text-slate-800 dark:text-slate-100">
                   {game.playedAs ? (
-                    <Badge variant="outline" className="capitalize text-lg px-3 py-1 border-slate-300 dark:border-slate-600 text-slate-800 dark:text-slate-100">
+                    <span>
                       {game.playedAs}
-                    </Badge>
+                    </span>
                   ) : (
                     <span className="text-slate-500 dark:text-slate-400 text-lg">-</span>
                   )}
