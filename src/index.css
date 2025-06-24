@@ -63,13 +63,13 @@ p {
 
 a {
   font-weight: 500;
-  color: #3b82f6;
+  color: #ffffff;
   text-decoration: inherit;
   transition: color 0.2s ease;
 }
 
 a:hover {
-  color: #2563eb;
+  color: #ffffff;
 }
 
 button {
@@ -85,13 +85,13 @@ button {
 }
 
 button:hover {
-  border-color: #3b82f6;
+  border-color: #ffffff;
   transform: translateY(-1px);
 }
 
 button:focus,
 button:focus-visible {
-  outline: 2px solid #3b82f6;
+  outline: 2px solid #ffffff;
   outline-offset: 2px;
 }
 
