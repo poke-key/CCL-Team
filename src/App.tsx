@@ -31,12 +31,12 @@ function App() {
                 
                 <div className="flex items-center space-x-2">
                   <Link to="/" className="no-underline">
-                    <Button variant="ghost" className="text-slate-800 dark:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-slate-50 px-4 py-2 text-base font-medium">
+                    <Button variant="ghost" className="text-white hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-white dark:hover:text-white px-4 py-2 text-base font-medium">
                       Home
                     </Button>
                   </Link>
                   <Link to="/games" className="no-underline">
-                    <Button variant="ghost" className="text-slate-800 dark:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-slate-50 px-4 py-2 text-base font-medium">
+                    <Button variant="ghost" className="text-white hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-white dark:hover:text-white px-4 py-2 text-base font-medium">
                       Games
                     </Button>
                   </Link>

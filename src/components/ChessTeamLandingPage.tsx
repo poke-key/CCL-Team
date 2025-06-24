@@ -65,6 +65,7 @@ const ChessTeamLandingPage = () => {
           </p>
           <Button 
             size="lg" 
+            className="text-white"
             onClick={() => window.location.href = '/games'}
           >
             View Games →
