@@ -133,7 +133,7 @@ button:focus-visible {
 
 /* Focus styles */
 .focus-visible:focus {
-  outline: 2px solid #3b82f6;
+  outline: 2px solid #ffffff;
   outline-offset: 2px;
 }
 
