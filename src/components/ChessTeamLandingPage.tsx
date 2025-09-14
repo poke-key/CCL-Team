@@ -63,9 +63,10 @@ const ChessTeamLandingPage = () => {
           <p className="text-lg text-slate-700 dark:text-slate-300 mb-6">
             Explore our match history and analyze our strategic gameplay
           </p>
-          <Button 
-            size="lg" 
-            className="text-white"
+          <Button
+            size="lg"
+            className="text-white dark:text-white"
+            style={{ color: 'white' }}
             onClick={() => window.location.href = '/games'}
           >
             View Games →

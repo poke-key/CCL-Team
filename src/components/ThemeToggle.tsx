@@ -21,7 +21,8 @@ export function ThemeToggle() {
       variant="ghost"
       size="icon"
       onClick={handleToggle}
-      className="relative text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-slate-100 rounded-lg p-2 transition-all duration-200 ease-in-out transform hover:scale-105 active:scale-95"
+      className="relative text-white dark:text-white hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-white dark:hover:text-white rounded-lg p-2 transition-all duration-200 ease-in-out transform hover:scale-105 active:scale-95"
+      style={{ color: 'white' }}
     >
       <div className="relative">
         {isDarkMode ? (
