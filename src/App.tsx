@@ -30,13 +30,13 @@ function App() {
                 </div>
                 
                 <div className="flex items-center space-x-2">
-                  <Link to="/" className="no-underline">
-                    <Button variant="ghost" className="text-white hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-white dark:hover:text-white px-4 py-2 text-base font-medium">
+                  <Link to="/" className="no-underline" style={{ color: 'white', textDecoration: 'none' }}>
+                    <Button variant="ghost" className="text-white dark:text-white hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-white dark:hover:text-white px-4 py-2 text-base font-medium" style={{ color: 'white' }}>
                       Home
                     </Button>
                   </Link>
-                  <Link to="/games" className="no-underline">
-                    <Button variant="ghost" className="text-white hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-white dark:hover:text-white px-4 py-2 text-base font-medium">
+                  <Link to="/games" className="no-underline" style={{ color: 'white', textDecoration: 'none' }}>
+                    <Button variant="ghost" className="text-white dark:text-white hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-white dark:hover:text-white px-4 py-2 text-base font-medium" style={{ color: 'white' }}>
                       Games
                     </Button>
                   </Link>

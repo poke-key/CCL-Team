@@ -160,4 +160,30 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  /* Force white text in dark mode for all link elements and form controls */
+  .dark a,
+  .dark button,
+  .dark [role="button"],
+  .dark select,
+  .dark option,
+  .dark [data-radix-select-trigger],
+  .dark [data-radix-select-content],
+  .dark [data-radix-select-item],
+  .dark [data-radix-select-value] {
+    color: white !important;
+  }
+
+  /* Ensure dropdown placeholder text is white in dark mode */
+  .dark [data-placeholder] {
+    color: white !important;
+  }
+
+  /* Override browser default link colors */
+  .dark a:link,
+  .dark a:visited,
+  .dark a:hover,
+  .dark a:active {
+    color: white !important;
+  }
 }
