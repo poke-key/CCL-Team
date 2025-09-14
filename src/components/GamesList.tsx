@@ -79,10 +79,11 @@ const GamesList: React.FC<GamesListProps> = ({
                 <TableCell className="max-w-xs truncate text-slate-800 dark:text-slate-100 text-lg py-4">{game.notes || "-"}</TableCell>
                 <TableCell className="py-4">
                   {game.chessComId ? (
-                    <Button 
+                    <Button
                       size="lg"
                       onClick={() => setSelectedGame(game)}
                       className="bg-blue-600 hover:bg-blue-700 text-white font-semibold text-lg px-6 py-2"
+                      style={{ color: 'white' }}
                     >
                       View Game
                     </Button>
