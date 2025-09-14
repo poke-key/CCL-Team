@@ -187,11 +187,5 @@
     color: white !important;
   }
 
-  /* Light mode: ensure proper dark text for dropdowns and forms */
-  :not(.dark) [data-radix-select-trigger],
-  :not(.dark) [data-radix-select-content],
-  :not(.dark) [data-radix-select-item],
-  :not(.dark) [data-radix-select-value] {
-    color: #1e293b !important;
-  }
+  /* Light mode dropdowns handled by individual component inline styles */
 }

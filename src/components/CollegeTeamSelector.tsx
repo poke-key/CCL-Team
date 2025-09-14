@@ -38,6 +38,7 @@ const CollegeTeamSelector: React.FC<CollegeTeamSelectorProps> = ({
     backgroundColor: isDarkMode ? '#1e293b' : 'white',
     border: '2px solid',
     borderColor: isDarkMode ? '#475569' : '#cbd5e1',
+    color: isDarkMode ? 'white' : '#1e293b',
   };
 
   return (
