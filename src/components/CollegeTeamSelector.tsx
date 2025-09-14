@@ -69,7 +69,7 @@ const CollegeTeamSelector: React.FC<CollegeTeamSelectorProps> = ({
               key={team.id}
               value={team.id}
               className="text-lg text-slate-900 dark:text-white hover:bg-blue-50 dark:hover:bg-blue-900/50 focus:bg-blue-100 dark:focus:bg-blue-900 cursor-pointer py-3 transition-all duration-200 ease-in-out hover:pl-4 transform"
-              style={{ color: 'white' }}
+              style={{ color: isDarkMode ? 'white' : 'black' }}
             >
               {team.name}
             </SelectItem>
