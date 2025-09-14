@@ -34,7 +34,7 @@ const PlayerSelector: React.FC<PlayerSelectorProps> = ({
     backgroundColor: isDarkMode ? '#1e293b' : 'white',
     border: '2px solid',
     borderColor: isDarkMode ? '#475569' : '#cbd5e1',
-    color: isDarkMode ? 'white' : '#1e293b',
+    color: 'white',
   };
 
   return (
@@ -51,12 +51,12 @@ const PlayerSelector: React.FC<PlayerSelectorProps> = ({
       <Select value={selectedPlayer} onValueChange={onChange}>
         <SelectTrigger
           className="w-full h-16 text-xl bg-white dark:bg-slate-800 border-2 border-slate-300 dark:border-slate-600 hover:border-indigo-400 dark:hover:border-indigo-500 transition-all duration-200 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
-          style={{ color: isDarkMode ? 'white' : '#1e293b' }}
+          style={{ color: 'white' }}
         >
           <SelectValue
             placeholder="Choose a player to view their games..."
             className="text-slate-600 dark:text-slate-300"
-            style={{ color: isDarkMode ? 'white' : '#64748b' }}
+            style={{ color: 'white' }}
           />
         </SelectTrigger>
         <SelectContent style={contentStyle} className="max-h-96">
@@ -65,7 +65,7 @@ const PlayerSelector: React.FC<PlayerSelectorProps> = ({
               key={name}
               value={name}
               className="text-lg text-slate-900 dark:text-slate-100 hover:bg-indigo-50 dark:hover:bg-indigo-900/50 focus:bg-indigo-100 dark:focus:bg-indigo-900 cursor-pointer py-3"
-              style={{ color: isDarkMode ? 'white' : '#1e293b' }}
+              style={{ color: 'white' }}
             >
               {name}
             </SelectItem>

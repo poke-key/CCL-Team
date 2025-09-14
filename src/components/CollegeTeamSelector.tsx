@@ -38,7 +38,7 @@ const CollegeTeamSelector: React.FC<CollegeTeamSelectorProps> = ({
     backgroundColor: isDarkMode ? '#1e293b' : 'white',
     border: '2px solid',
     borderColor: isDarkMode ? '#475569' : '#cbd5e1',
-    color: isDarkMode ? 'white' : '#1e293b',
+    color: 'white',
   };
 
   return (
@@ -55,12 +55,12 @@ const CollegeTeamSelector: React.FC<CollegeTeamSelectorProps> = ({
       <Select value={selectedCollegeTeam} onValueChange={onChange}>
         <SelectTrigger
           className="w-full h-16 text-xl bg-white dark:bg-slate-800 border-2 border-slate-300 dark:border-slate-600 hover:border-blue-400 dark:hover:border-blue-500 transition-all duration-300 ease-in-out focus:ring-2 focus:ring-blue-500 focus:border-blue-500 shadow-md hover:shadow-lg transform hover:scale-[1.02] active:scale-100"
-          style={{ color: isDarkMode ? 'white' : '#1e293b' }}
+          style={{ color: 'white' }}
         >
           <SelectValue
             placeholder="Choose a college team to analyze..."
             className="text-slate-600 dark:text-white"
-            style={{ color: isDarkMode ? 'white' : '#64748b' }}
+            style={{ color: 'white' }}
           />
         </SelectTrigger>
         <SelectContent style={contentStyle} className="max-h-96">
@@ -69,7 +69,7 @@ const CollegeTeamSelector: React.FC<CollegeTeamSelectorProps> = ({
               key={team.id}
               value={team.id}
               className="text-lg text-slate-900 dark:text-white hover:bg-blue-50 dark:hover:bg-blue-900/50 focus:bg-blue-100 dark:focus:bg-blue-900 cursor-pointer py-3 transition-all duration-200 ease-in-out hover:pl-4 transform"
-              style={{ color: isDarkMode ? 'white' : '#1e293b' }}
+              style={{ color: 'white' }}
             >
               {team.name}
             </SelectItem>
